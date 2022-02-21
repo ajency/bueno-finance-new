@@ -1,0 +1,9 @@
+/wp-content/uploads/
+/wp-content/plugins/
+/wp-content/mu-plugins/
+/wp-content/upgrade
+/wp-content/themes/twentynineteen
+/wp-content/themes/twentytwenty
+/wp-content/themes/twentytwentyone
+/.htaccess
+/.well-known
