@@ -301,15 +301,3 @@ function enqueue_theme_scripts() {
 	wp_enqueue_script('slickanimation');
 }
 add_action("wp_enqueue_scripts", "enqueue_theme_scripts");
-
-/* register menu location */
-
-function wpb_custom_menu() {
-	register_nav_menus(
-	  array(
-		'topbar-menu' => __( 'Topbar Menu' ),
-		'mobile-menu' => __( 'Mobile Menu' ),
-	  )
-	);
-  }
-  add_action( 'init', 'wpb_custom_menu' );
