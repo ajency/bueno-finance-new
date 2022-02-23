@@ -53,11 +53,13 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 30px;
+                margin-bottom:0px;
             }
 
             .stat-number{
                 font-size: 30px;
                 line-height: 37px;
+                margin-bottom: 2px;
             }
         }
     }
@@ -77,6 +79,8 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                max-width: 206px;
+                min-height: 99px;
             }
         }
     }
@@ -88,11 +92,15 @@
         .features-container{
             &__list{
                 ul{
+                    margin-bottom: 23px;
                     li{
                         font-size: 16px;
                         line-height: 20px;
                         color: $buenogreen;
                         font-weight: normal;
+                        &:not(:last-child){
+                            margin-bottom: 23px;
+                        }
                         img{
                             width: 40px !important;
                             margin-right: 15px;
@@ -108,7 +116,7 @@
                 position: relative;
 
                 &:not(:first-child){
-                    margin-left: 25px !important;
+                    margin-left: 12px !important;
                 }
                 p{
                     font-weight: 500;
@@ -131,7 +139,7 @@
                     width: 50px;
                     position: absolute;
                     border-radius: 100%;
-                    left: -7px;
+                    left: 0px;
                     top:-14px;
                 }
             }
