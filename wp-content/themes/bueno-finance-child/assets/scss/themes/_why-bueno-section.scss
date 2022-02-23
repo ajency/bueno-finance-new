@@ -110,17 +110,20 @@
                 &:not(:first-child){
                     margin-left: 25px !important;
                 }
-                .stat-number{
-                    font-size: 18px;
-                    line-height: 22px;
-                    margin-bottom: 6px;
-                }
                 p{
                     font-weight: 500;
                     font-size: 12px;
                     line-height: 24px;
                     text-align: left;
+                    color: black;
                 }
+                .stat-number{
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 6px;
+                    color:$light-green;
+                }
+
                 &:before{
                     content:"";
                     background: $gradient-1;
