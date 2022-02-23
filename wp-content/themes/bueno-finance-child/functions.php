@@ -273,9 +273,10 @@ function genesis_sample_comments_gravatar( $args ) {
 add_action( 'wp_enqueue_scripts', 'my_child_theme_styles' );
 
 function my_child_theme_styles() {
-	wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@400;500;600;700&display=swap', array(), '0.1', false);
+	wp_enqueue_style('Montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap', array(), '0.1', false);
+	wp_enqueue_style('Montserrat Alternates', 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap', array(), '0.1', false);
+	wp_enqueue_style('critical-css', get_stylesheet_directory_uri() . '/assets/css/critical-css.css', array(), '0.1', false); 
  	wp_enqueue_style('theme-styles', get_stylesheet_directory_uri() . '/assets/css/theme-style.css', array(), '0.1', false);
-	 wp_enqueue_style('critical-css', get_stylesheet_directory_uri() . '/assets/css/critical-css.css', array(), '0.1', false); 
 	wp_enqueue_style('slick', get_stylesheet_directory_uri() . '/assets/css/slick.css', array(), '', false);
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=5.4.2', array(), '', false);
 }

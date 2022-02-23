@@ -1,3 +1,32 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.alignfull .alignwide, .alignwide .alignwide {
+    @media only screen and (min-width: 1400px){
+        max-width: 1396px !important;
+    }
+    @media only screen and (max-width: 1400px){
+        max-width: 900px !important;
+    }
+    @media(max-width:900px) and (min-width: 769px){
+        padding:0px 30px;
+    }
+    @media(max-width:768px){
+        padding:0px 30px;
+    }
+}
+
+.section-heading{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: -2px;
+    color: $buenogreen;
+
+    @media(max-width:768px){
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
