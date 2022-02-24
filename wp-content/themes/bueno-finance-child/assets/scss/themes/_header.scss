@@ -1,4 +1,4 @@
-.site-header{
+/* .site-header{
 background-color: $buenogreen;
 height: 100px;
 padding-top: 0;
@@ -88,4 +88,99 @@ ul{
 }
 }
 
+} */
+
+
+/** new styling **/
+.site-header{
+    background-color: $buenogreen;
+    color:#ffffff;
+    box-shadow: none;
+    .wrap{
+        height: 100%;
+        .title-area{
+            width: auto;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        nav{
+            .menu{
+                .menu-item{
+                    a{
+                        color:#ffffff;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 90%;
+                    }
+                }
+            }
+        }
+        .menu-toggle{
+            color: #fff;
+            font-size: 0;
+        }
+    }
+    @media(max-width:961px){
+        padding: 0;
+        height: auto;
+        .wrap{
+            padding-top: 10px !important;
+            padding-bottom: 13.8px !important;
+            .title-area{
+                .custom-logo{
+                    height: 37.2px;
+                }
+            }
+            .menu-toggle{
+                margin: 0;
+                padding: 0;
+                height: 37.2px;
+                &::before{
+                    margin-right: 0;
+                }
+            }
+            nav{
+                padding-bottom: 0;
+                .wrap{
+                    padding: 0;
+                    .menu{
+                        .menu-item{
+                            &:last-child{
+                                a{
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:960px){
+        height: 100px;
+        padding:0;
+        .wrap{
+            margin: auto;
+            nav{
+                height: 100%;
+                padding: 0 !important;
+                .menu{
+                    margin-bottom: 0px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    .menu-item{
+                        a{
+                            padding: 0;
+                        }
+                        &:not(:last-child){
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

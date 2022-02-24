@@ -1,14 +1,20 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.alignfull .alignwide, .alignwide .alignwide {
+.alignfull .alignwide, .alignwide .alignwide, header.site-header .wrap {
     @media only screen and (min-width: 1500px){
         max-width: 1396px !important;
     }
-    @media only screen and (max-width: 1400px){
+    @media only screen and (max-width: 1500px){
+        max-width: 1200px !important;
+    }
+    @media only screen and (max-width: 1250px){
+        max-width: 1000px !important;
+    }
+    @media only screen and (max-width: 1060px){
         max-width: 900px !important;
     }
-    @media(max-width:900px) and (min-width: 769px){
+    @media(max-width:960px) and (min-width: 769px){
         padding:0px 30px;
     }
     @media(max-width:768px){
@@ -29,4 +35,7 @@ body{
         font-size: 30px;
         line-height: 37px;
     }
+}
+button, a{
+    outline: none !important;
 }

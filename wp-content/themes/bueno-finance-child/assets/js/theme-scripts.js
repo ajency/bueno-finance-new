@@ -57,3 +57,34 @@ $(document).ready(function(){
         touchThreshold: 100
     });
 });
+/* our lending partners & our backing logo slider */
+$lendingPartnersSlider = $(".lending-partners-section .logo-slider .gb-container-content");
+$(function() {
+    $lendingPartnersSlider.slick({
+        speed: 5000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        centerMode: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        infinite: true,
+        initialSlide: 1,
+        arrows: false,
+        buttons: false,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    speed: 5000,
+                    autoplaySpeed: 0,
+                    autoplay: true,
+                    centerPadding: '22px',
+                }
+            }
+        ]
+    });
+});

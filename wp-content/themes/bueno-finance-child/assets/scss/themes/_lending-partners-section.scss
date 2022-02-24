@@ -1,0 +1,21 @@
+.lending-partners-section{
+    background: $gradient-bg;
+    padding: 60px 0 53px;
+    .section-heading{
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 18px;
+    }
+    p{
+        color:$text-color-2;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    @media(max-width:768px){
+        &.alignfull{
+            .alignwide.logo-slider{
+                padding: 0px;
+            }
+        }
+    }
+}

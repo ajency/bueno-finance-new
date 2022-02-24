@@ -3,7 +3,7 @@
         margin-bottom:40px;
     }
     .right-side{
-        padding-bottom: 86px;
+        margin-bottom: 86px;
     }
     .gb-container-image-wrap{
         @media(max-width:990px){
@@ -24,6 +24,8 @@
                     font-size: 18px;
                     line-height: 22px;
                     color: $text-color-1;
+                    display: flex;
+                    align-items: center;
 
                     &:not(:last-child){
                         margin-bottom: 32px;
@@ -79,7 +81,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                max-width: 206px;
+                /* max-width: 206px; */
                 min-height: 99px;
             }
         }
@@ -143,6 +145,15 @@
                     top:-14px;
                 }
             }
+        }
+        .right-side{
+            margin-bottom: 20px;
+        }
+    }
+    @media only screen and (max-width: 1500px){
+        .gb-2-col-wideright>.gb-layout-column-wrap {
+            -ms-grid-columns: 1fr 3.5fr;
+            grid-template-columns: 1fr 3.5fr;
         }
     }
 }
