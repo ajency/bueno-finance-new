@@ -56,6 +56,25 @@ $(document).ready(function(){
         cssEase: 'ease-in-out',
         touchThreshold: 100
     });
+    $('.our-customer-slider-js').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true,
+        speed: 1000,
+        cssEase: 'ease-in-out',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
+    });
 });
 /* our lending partners & our backing logo slider */
 $lendingPartnersSlider = $(".lending-partners-section .logo-slider .gb-container-content");

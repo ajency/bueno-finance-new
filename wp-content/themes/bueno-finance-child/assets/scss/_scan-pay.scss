@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     color: $color-white;
     border-radius: 0 250px;
+    margin-bottom: 80px;
     .subtitle-wrap{
         display: flex;
         margin-bottom: 40px;
@@ -22,6 +23,9 @@
                 font-size: 36px;
                 line-height: 44px;
                 display: block;
+                &::first-letter{
+                    font-size: 45px;
+                }
             }
         }
     }
@@ -127,6 +131,7 @@
     @media (max-width: 992px){
         border-radius: 0 0 0 150px;
         padding-top: 40px;
+        margin-bottom: 50px;
         .subtitle-wrap{
             flex-direction: column;
             justify-content: center;
@@ -145,7 +150,10 @@
                 line-height: 24px;
                 span{
                     font-size: 30px;
-                    line-height: 37px;   
+                    line-height: 37px;  
+                    &::first-letter{
+                        font-size: 45px;
+                    } 
                 }
             }
         }
