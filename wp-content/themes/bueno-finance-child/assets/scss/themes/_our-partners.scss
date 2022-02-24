@@ -1,0 +1,133 @@
+.our-partners-section{
+    &__intro{
+        max-width: 694px;
+        margin:auto;
+        .section-heading{
+            color:$text-color-1;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #000000;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+    }
+    .logo-slider{
+        figure{
+            margin-bottom: 0px;
+            height: 60%;
+            width: 60%;
+            img{
+                height: 100%;
+                width: auto;
+                object-fit: contain;
+                margin:auto;
+            }
+        }
+        .slick-list{
+            border-radius: 12px;
+        }
+        .slick-slide{
+            margin: 0px 11px;
+            border-radius: 8px;
+            .wp-block-group__inner-container{
+                border-radius: 8px;
+                background: $gradient-2;
+                position: relative;
+                width: 320px;
+                height: 190px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .gb-container-inside{
+            border-radius: 12px;
+            position: relative;
+            &:after, &:before{
+                content:"";
+                background: $slider-overlay;
+                width: 134px;
+                height: 190px;
+                border-radius: 12px;
+                position:absolute;
+                top:0;
+                z-index: 1;
+            }
+            &:before{
+                left: -2px;
+            }
+            &:after{
+                transform: rotate(-180deg);
+                right: -2px;
+            }
+        }
+    }
+    /* mobile & tablet */
+    @media(max-width:768px){
+        .logo-slider{
+            &.alignwide{
+                padding: 0px;
+            }
+            .slick-track{
+                display: flex;
+                align-items: center;
+                height: 156px;
+            }
+            .slick-list{
+                border-radius: 0px;
+            }
+
+            .slick-slide{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .wp-block-group__inner-container{
+                    width: 150px;
+                    height: 120px;
+                    transform: scale(1);
+                    transform-origin: center center;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+              .slick-slide,
+                .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+                    .wp-block-group__inner-container{
+                        /* transform: scale(1, 1); */
+                        width: 150px;
+                        height: 120px;
+                        transform-origin: center center;
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+                .slick-center,
+                .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+                    .wp-block-group__inner-container{
+                        width: 242px;
+                        height: 156px;
+                        transform-origin: center center;
+                        transition: all 0.4s ease-in-out;
+                       /*  transform: scale(1.6); */
+                    }
+                }
+                .slick-current.slick-active{
+                    .wp-block-group__inner-container{
+                        width: 242px;
+                        height: 156px;
+                        transform-origin: center center;
+                        transition: all 0.4s ease-in-out;
+                        /* transform: scale(1.6); */
+                    }
+                  }
+            .gb-container-inside{
+                &:before, &:after{
+                    width: 35px;
+                    height: 156px;
+                    border-radius: 0px;
+                    top:0px;
+                }
+            }
+        }
+    }
+}
