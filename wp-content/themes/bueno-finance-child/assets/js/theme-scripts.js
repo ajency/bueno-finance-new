@@ -42,3 +42,18 @@ $(function() {
         ]
     });
 });
+$(document).ready(function(){
+    $('.mobile-slider-js').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        speed: 1000,
+        fade: true,
+        cssEase: 'ease-in-out',
+        touchThreshold: 100
+    });
+});
