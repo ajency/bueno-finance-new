@@ -118,6 +118,7 @@ ul{
             }
         }
         .menu-toggle{
+            /* display: none !important; */
             color: #fff;
             font-size: 0;
         }
@@ -140,12 +141,69 @@ ul{
                 &::before{
                     margin-right: 0;
                 }
+                .hamburger{
+                    display: block;
+                    float: right;
+                    margin: 0;
+                    height: 36.2px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    .line{
+                        background-color: #ffffff;
+                        width: 32.81px;
+                        height: 1.5px;
+                        transition: all 200ms ease-in-out;
+                    }
+                    .line:first-child{
+                        transform: translateY(-8px);
+                        -webkit-transform: translateY(-8px);
+                    }
+                    .line:last-child{
+                        transform: translateY(8px);
+                        -webkit-transform: translateY(8px);
+                    }
+                    &:active{
+                        .line{
+                            background: #ffffff;
+                        }
+                    }
+                    &:active {
+                        .line:first-child{
+                            transform: translateY(-2px);
+                            -webkit-transform: translateY(-2px);
+                        }
+                        .line:last-child{
+                            transform: translateY(2px);
+                            -webkit-transform: translateY(2px);
+                        }
+                    }
+                }
+                &.activated{
+                    .hamburger{
+                        .line:first-child{
+                            transform: translateY(3px) rotate(40deg);
+                            -webkit-transform: translateY(3px) rotate(40deg);
+                        }
+                        .line:nth-child(2){
+                            opacity: 0;
+                        }
+                        .line:last-child{
+                            transform: translateY(0px) rotate(-40deg);
+                            -webkit-transform: translateY(0px) rotate(-40deg);
+                        }
+                    }
+                }
             }
             nav{
+                padding-top: 0;
                 padding-bottom: 0;
                 .wrap{
                     padding: 0;
+                    padding-top: 15px;
                     .menu{
+                        margin: 15px 0;
                         .menu-item{
                             &:last-child{
                                 a{

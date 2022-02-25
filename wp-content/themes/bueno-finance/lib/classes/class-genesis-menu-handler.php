@@ -84,9 +84,9 @@ class Genesis_Menu_Handler {
 
 		// Initialize the script configuration.
 		$script = [
-			'mainMenu'            => __( 'Menu', 'genesis' ),
-			'menuIconClass'       => 'dashicons-before dashicons-menu',
-			'menuIconOpenedClass' => 'dashicons-before dashicons-no-alt',
+			'mainMenu'            => '<div class="hamburger"><div class="line"></div><div class="line"></div><div class="line"></div></div>',
+			'menuIconClass'       => '',
+			'menuIconOpenedClass' => '',
 			'subMenu'             => __( 'Submenu', 'genesis' ),
 			'subMenuIconClass'    => 'dashicons-before dashicons-arrow-down-alt2',
 			'menuClasses'         => [
