@@ -1,0 +1,273 @@
+.footer-widgets{
+    background-color: $buenogreen;
+    color:#ffffff;
+    border:none !important;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 0;
+
+    a{
+        text-decoration: none !important;
+    }
+
+    .widgettitle.widget-title{
+        margin-bottom: 40px;
+    }
+
+    nav{
+        .menu{
+            margin-bottom: 0;
+            .menu-item{
+                &:not(:last-child){
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+
+    .widget{
+        &.widget_nav_menu{
+            .widget-wrap{
+                .widgettitle.widget-title{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 600;
+                }
+                nav{
+                    .menu{
+                        .menu-item{
+                            a{
+                                font-size: 16px;
+                                line-height: 20px;
+                                color:#ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .widget-area{
+        width: calc(100% /5);
+        padding:0;
+        &.footer-widgets-4{
+            .widget{
+                &.widget_nav_menu{
+                    margin-bottom: 22px;
+                    .widget-wrap{
+                        nav{
+                            .menu{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.footer-widgets-1{
+            width: calc(100% /2.5);
+            .widget{
+                .widget-wrap{
+                    max-width: 354px;
+                }
+                &.widget_media_image{
+                    margin-bottom: 17.88px;
+                }
+                &.widget_text{
+                    .widget-wrap{
+                        .textwidget{
+                            p{
+                                margin-bottom: 10px;
+                                strong{
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                }
+                                &:nth-child(2){
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    font-family: 'Montserrat', sans-serif;
+    &.site-footer{
+        background-color: $buenogreen;
+        color:#ffffff;
+        border:none !important;
+        padding: 31px 0 27px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        .wrap{
+            margin: auto;
+        }
+    }
+}
+
+@media(max-width:961px){
+    .footer-widgets{
+        padding: 40px 0 15px;
+        .widget-area{
+            &.footer-widgets-1, &.footer-widgets-4{
+                width: 100%;
+            }
+            &.footer-widgets-2, &.footer-widgets-3{
+                width: 50%;
+            }
+            &.footer-widgets-1{
+                margin-bottom: 42px;
+                .widget{
+                    &.widget_media_image{
+                        margin-bottom: 30px;
+                    }
+                    &.widget_text{
+                        .widget-wrap{
+                            .textwidget{
+                                p{
+                                    strong{
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 18px;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.footer-widgets-4{
+                .widget{
+                    &.widget_nav_menu{
+                        display: none;
+                    }
+                    &.simple-social-icons{
+                        .widget-wrap{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            ul{
+                                display: flex;
+                                align-items: center;
+                                .ssi-facebook{
+                                    display: none;
+                                }
+                                .ssi-phone{
+                                    order:1;
+                                    a{
+                                        svg{
+                                            margin-top: -5px;
+                                        }
+                                    }
+                                }
+                                .ssi-email{
+                                    order:2;
+                                    a{
+                                        svg{
+                                            margin-top: 3px;
+                                        }
+                                    }
+                                }
+                                .ssi-linkedin{
+                                    order:3;
+                                }
+                                .ssi-twitter{
+                                    order:4;
+                                }
+                                li{
+                                    margin: 0px !important;
+                                    a{
+                                        padding: 10px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .widget{
+            &.widget_nav_menu{
+                .widget-wrap{
+                    .widgettitle{
+                        &.widget-title{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        nav{
+            .menu{
+                .menu-item{
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        &.site-footer{
+            padding: 20px 0;
+            background-color: #ffffff;
+            color: $text-color-1;
+            text-align: left;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+@media(min-width:960px){
+    .footer-widgets{
+        .widget-area{
+            &.footer-widgets-4{
+                .widget{
+                    &.simple-social-icons{
+                        .widget-wrap{
+                            ul{
+                                .ssi-email, .ssi-phone{
+                                    display: none;
+                                }
+                                .ssi-facebook{
+                                    order:3;
+                                }
+                                .ssi-linkedin{
+                                    order:2;
+                                }
+                                .ssi-twitter{
+                                    order:1;
+                                }
+                                .ssi-facebook{
+                                    a{
+                                        padding-left: 0px !important;
+                                    }
+                                }
+                                li{
+                                    margin: 0px !important;
+                                    a{
+                                        padding: 10px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
