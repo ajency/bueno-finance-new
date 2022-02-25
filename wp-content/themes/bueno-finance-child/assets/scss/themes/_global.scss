@@ -1,7 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.alignfull .alignwide, .alignwide .alignwide, header.site-header .wrap {
+.alignfull .alignwide, .alignwide .alignwide, header.site-header .wrap, .footer-widgets .wrap, footer.site-footer .wrap {
     @media only screen and (min-width: 1500px){
         max-width: 1396px !important;
     }
