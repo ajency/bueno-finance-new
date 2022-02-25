@@ -1,3 +1,18 @@
+$(document).ready(function(){
+    $('.hero-slider-js').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        speed: 1000,
+        cssEase: 'ease-in-out',
+        touchThreshold: 100
+    });
+});
+
 /* circle background size */
 $(window).on("load resize",function(e){
     $targetColumn = $(".why-bueno-section .left-side");

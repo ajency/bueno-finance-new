@@ -1,0 +1,106 @@
+.hero-banner-section {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    .hero-banner-wrap{
+        .hero-slider-section{
+            .hero-slider-js{
+                .hero-slide{
+                    margin: 0 10px;
+                    .hero-img{
+
+                    }
+                }
+            }
+        }
+        .hero-text-section{
+            display: flex;
+            align-items: center;
+            z-index: 2;
+            .hero-text-wrap{
+                .hero-banner-heading{
+                    font-weight: 600;
+                    font-size: 72px;
+                    line-height: 88px;
+                    letter-spacing: -2px;
+                    color: $buenogreen;
+                    width: 127%;
+                    margin-top: 0;
+                    margin-bottom: 39px;
+                    font-family: Montserrat Alternates;
+                    max-width: 745px;
+                }
+                .hero-banner-sub-text{
+                    color: $black;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 30px;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 0;
+                }
+                .hero-banner-btn{
+                    a{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        background: $buenogreen !important;
+                        padding: 19px 42px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(max-width:992px){
+        margin-top: 0;
+        margin-bottom: 50px;
+        .hero-banner-wrap{
+            .hero-text-section{
+                .hero-text-wrap{
+                    .hero-banner-heading{
+                        font-size: 36px;
+                        line-height: 44px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    .hero-banner-sub-text{
+                        color: $black-2;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: normal;
+                        margin-bottom: 26px;
+                    }
+                    .hero-banner-btn{
+                        a{
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 22px;
+                            background: $buenogreen !important;
+                            padding: 19px 42px;
+                        }
+                    }
+                }
+            }
+            .hero-slider-section {
+                .hero-slider-js {
+                    margin: 0 -40px;
+                    .hero-slide {
+                        .hero-img {
+                            margin-bottom: 34px;
+                            &.mWebShow{
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
+                }
+            }
+            .hero-grid{
+                >.gb-layout-column-wrap {
+                    grid-template-columns: 1fr;
+                    grid-template-areas: "col2" "col1";
+                }
+            }
+        }
+    }
+}
