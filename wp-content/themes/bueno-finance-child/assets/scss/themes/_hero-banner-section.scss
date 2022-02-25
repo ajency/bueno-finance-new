@@ -39,6 +39,7 @@
                     margin-bottom: 0;
                 }
                 .hero-banner-btn{
+                    margin-bottom: 0;
                     a{
                         font-weight: 600;
                         font-size: 18px;
@@ -49,6 +50,9 @@
                 }
             }
         }
+    }
+    .wp-block-columns{
+        margin-bottom: 0;
     }
     
     @media(max-width:992px){
