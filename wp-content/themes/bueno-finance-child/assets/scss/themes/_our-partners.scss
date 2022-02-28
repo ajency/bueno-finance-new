@@ -1,5 +1,5 @@
 .our-partners-section{
-    background:$gradient-bg;
+    background:$background;
     padding-top: 123px;
     padding-bottom: 123px;
     margin-bottom: 100px;
@@ -89,7 +89,8 @@
                     width: 16px;
                     height: 16px;
                     text-indent: -999px;
-                    background: $slick-dots;
+                    background: transparent;
+                    border: 2px solid $slick-dots-active;
                     border-radius: 50%;
                     padding: 0;
                     font-size: 0;

@@ -40,7 +40,7 @@
     }
     .stats-container{
         &__stat{
-            background: $gradient-1;
+            background: $background;
             text-align: center;
             padding: 16px 14px 14px;
             border-radius: 8px;
@@ -114,6 +114,7 @@
         .stats-container{
             &__stat{
                 background-image: none;
+                background-color: transparent;
                 padding:0px;
                 position: relative;
 
@@ -136,13 +137,14 @@
 
                 &:before{
                     content:"";
-                    background: $gradient-1;
+                    background: $background;
                     height: 50px;
                     width: 50px;
                     position: absolute;
                     border-radius: 100%;
                     left: 0px;
                     top:-14px;
+                    z-index: -1;
                 }
             }
         }

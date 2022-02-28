@@ -80,7 +80,8 @@
                 width: 16px;
                 height: 16px;
                 text-indent: -999px;
-                background: $slick-dots;
+                background: transparent;
+                border: 2px solid $slick-dots-active;
                 border-radius: 50%;
                 padding: 0;
                 margin-right: 10px;
