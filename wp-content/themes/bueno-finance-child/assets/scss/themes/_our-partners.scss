@@ -2,6 +2,7 @@
     background:$gradient-bg;
     padding-top: 123px;
     padding-bottom: 123px;
+    margin-bottom: 100px;
     .alignwide{
         margin-bottom: 0;
     }
@@ -144,6 +145,7 @@
     }
     /* mobile & tablet */
     @media(max-width:768px){
+        margin-bottom: 40px;
         padding-top: 38px;
         padding-bottom: 40px;
         .logo-slider{
