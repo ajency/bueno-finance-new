@@ -1,0 +1,131 @@
+.why-partners-section{
+    margin-bottom: 80px;
+    .description{
+        display: none;
+    }
+    .section-heading{
+        margin-bottom: 71px;
+    }
+    .wp-block-media-text{
+        padding: 0 !important;
+        grid-template-columns: auto 1fr;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: $buenogreen;
+        figure{
+            width: 60px;
+        }
+        &:first-child{
+            margin-bottom: 34px;
+        }
+    }
+    .wp-block-columns{
+        margin-bottom: 0px;
+    }
+    .book-demo-section{
+        background: $background;
+        border-radius: 16px;
+        padding:71px 22.72px 27.7px 44px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        figure{
+            margin: 0;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+        strong{
+            font-weight: 600;
+        }
+        .gb-block-button{
+            margin-top: 30px;
+            margin-bottom: 53.3px;
+        }
+        .wp-block-column{
+            margin-left: 0px !important;
+        }
+    }
+    @media(max-width:959px){
+        .wp-block-columns{
+            &.alignwide{
+                flex-direction: column;
+                flex-wrap: wrap;
+                .wp-block-column{
+                    margin-left: 0px;
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:690px){
+        background: $gradient-bg;
+        padding-top:50px;
+        margin-bottom: 0px;
+        .section-heading{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .media-list{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            p{
+                margin-bottom: 0px;
+            }
+            .wp-block-column{
+                margin-bottom: 0px !important;
+                .wp-block-media-text{
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    figure{
+                        margin-bottom: 10px;
+                    }
+                    &:first-child{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        .book-demo-section{
+            padding: 31px 30px 30px;
+            border: 1px solid $buenogreen;
+            background: transparent;
+            border-radius: 8px;
+            text-align: center;
+            .wp-block-columns{
+                .wp-block-column{
+                    margin-bottom: 0px !important;
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+            .gb-block-button{
+                margin: 30px auto 0px;
+            }
+        }
+        .description{
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 34px;
+        }
+        .wp-block-columns{
+            &.alignwide{
+                .wp-block-column{
+                    &:first-child{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -43,3 +43,18 @@ button, a{
 .site-inner{
     padding-top: 0 !important;
 }
+.gb-block-button{
+    a{
+        color: #ffffff;
+        background: $buenogreen !important;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px !important;
+        padding: 17px;
+        min-width: 241.45px;
+    }
+}
+.entry {
+    margin-bottom: 0px;
+}
