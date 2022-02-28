@@ -116,7 +116,6 @@ $(function() {
                     speed: 5000,
                     autoplaySpeed: 0,
                     autoplay: true,
-                    centerPadding: '22px',
                 }
             }
         ]
