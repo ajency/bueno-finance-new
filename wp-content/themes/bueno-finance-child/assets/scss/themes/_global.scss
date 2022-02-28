@@ -58,3 +58,23 @@ button, a{
 .entry {
     margin-bottom: 0px;
 }
+.header-button{
+    padding: 15px 30px;
+    background-color: #72941A;
+    border-radius: 30px;
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 50px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    a{
+        padding: 0px !important;
+    }
+    @media(max-width: 961px){
+        margin-top: 15px;
+    }
+}
