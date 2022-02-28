@@ -23,7 +23,8 @@ $(window).on("load resize",function(e){
 
 /* our partners logo slider */
 $ourPartnersLogoSlider = $(".our-partners-section .logo-slider .gb-container-content");
-$(function() {
+$ourPartnersTestimonialSlider = $(".our-partners-section .testimonial-slider .gb-container-content");
+$(function () {
     $ourPartnersLogoSlider.slick({
         speed: 5000,
         autoplay: true,
@@ -55,7 +56,26 @@ $(function() {
                 }
             }
         ]
-    });
+});
+$ourPartnersTestimonialSlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: true,
+    speed: 1000,
+    cssEase: 'ease-in-out',
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                dots: false,
+            }
+        }
+    ]
+});
 });
 $(document).ready(function(){
     $('.mobile-slider-js').slick({

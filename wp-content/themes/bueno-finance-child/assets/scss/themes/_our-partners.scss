@@ -1,4 +1,10 @@
 .our-partners-section{
+    background:$gradient-bg;
+    padding-top: 123px;
+    padding-bottom: 123px;
+    .alignwide{
+        margin-bottom: 0;
+    }
     &__intro{
         max-width: 694px;
         margin:auto;
@@ -33,10 +39,10 @@
             border-radius: 8px;
             .wp-block-group__inner-container{
                 border-radius: 8px;
-                background: $gradient-2;
+                background: #ffffff;
                 position: relative;
-                width: 320px;
-                height: 190px;
+                width: 323px;
+                height: 255px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -47,9 +53,9 @@
             position: relative;
             &:after, &:before{
                 content:"";
-                background: $slider-overlay;
-                width: 134px;
-                height: 190px;
+                background: $slider-overlay-white;
+                width: 76px;
+                height: 255px;
                 border-radius: 12px;
                 position:absolute;
                 top:0;
@@ -64,8 +70,82 @@
             }
         }
     }
+    .testimonial-slider{
+        font-family: 'Montserrat';
+        .slick-dots{
+            display: flex;
+            padding: 0;
+            margin: 32px 0 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            li{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    width: 16px;
+                    height: 16px;
+                    text-indent: -999px;
+                    background: $slick-dots;
+                    border-radius: 50%;
+                    padding: 0;
+                    font-size: 0;
+                }
+                &:not(:last-child){
+                    button{
+                        margin-right: 10px;
+                    }
+                }
+                &.slick-active{
+                    button{
+                        background: $slick-dots-active;
+                    }
+                }
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .testimonial-text{
+            position: relative;
+            padding-top: 50px;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 145.4%;
+            letter-spacing: -0.5px;
+            &:before{
+                content:"";
+                background-image: url('../img/quote.svg');
+                position: absolute;
+                top: 0px;
+                left: 24px;
+                width: 76px;
+                height: 66px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: -1;
+            }
+        }
+        hr{
+            width: 38px;
+            margin: 30px auto;
+        }
+        .author-name, .author-designation{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+        .author-name{
+            font-weight: 700;
+        }
+    }
     /* mobile & tablet */
     @media(max-width:768px){
+        padding-top: 38px;
+        padding-bottom: 40px;
         .logo-slider{
             &.alignwide{
                 padding: 0px;
@@ -128,6 +208,64 @@
                     top:0px;
                 }
             }
+        }
+        .logo-slider{
+            .gb-container-inside{
+                &:after, &:before{
+                    background: linear-gradient(261.4deg, rgba(255, 255, 255, 0.94) 27.19%, rgba(255, 255, 255, 0) 83.32%);
+                    width: 35px;
+                    height: 120px;
+                    top:18px;
+                }
+                &:before{
+                    transform: rotate(-180deg);
+                }
+                &:after{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        .testimonial-slider{
+            .testimonial-text{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            hr{
+                margin: 60px auto 20px;
+            }
+            .slick-slide{
+                .testimonial-text{
+                    position: relative;
+                    padding-top: 12px;
+                    &:before, &:after{
+                        width: 46.16px;
+                        height: 40px;
+                    }
+                    &:before{
+                        left: 20px;
+                    }
+                    &:after{
+                        content:"";
+                        background-image: url('../img/quote.svg');
+                        position: absolute;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        z-index: -1;
+                        bottom:-27px;
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:600px){
+        .alignwide{
+            padding: 0;
+        }
+        .logo-slider{
+            margin-bottom: 42px;
         }
     }
 }
