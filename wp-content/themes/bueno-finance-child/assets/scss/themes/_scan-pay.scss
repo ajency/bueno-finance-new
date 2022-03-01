@@ -1,12 +1,14 @@
 .scan-pay-section{
-    background-image: url('../../images/scan-section-bg.png');
+    background-image: url('../img/desktopbg.png');
     padding-top: 100px;
+    padding-bottom: 173px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: $color-white;
-    border-radius: 0 250px;
+    border-radius: 0 400px;
     margin-bottom: 80px;
+
     .subtitle-wrap{
         display: flex;
         margin-bottom: 40px;
@@ -109,8 +111,13 @@
             }
         }
     }
-    .scan-section1, .scan-section2{
+    .scan-section1{
         padding-bottom: 144px;
+    }
+    .scan-section2{
+        .wp-block-columns{
+            margin-bottom: 0px;
+        }
     }
     .scan-section1 > .gb-layout-column-wrap {
         align-items: center;
@@ -134,7 +141,7 @@
     }
 
     @media (max-width: 992px){
-        border-radius: 0 0 0 150px;
+        border-radius: 0 0 0 120px;
         padding-top: 40px;
         margin-bottom: 50px;
         .subtitle-wrap{
@@ -204,6 +211,19 @@
         }
         .scan-section1, .scan-section2{
             padding-bottom: 30px;
+        }
+    }
+    @media(max-width:768px){
+        padding-top: 215px;
+        padding-bottom: 43.3px;
+        background-image: url('../img/mobbg.png');
+        margin-top: -106px;
+        .mob-img-container{
+            .scan-section2{
+                figure{
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     @media(max-width:690px){

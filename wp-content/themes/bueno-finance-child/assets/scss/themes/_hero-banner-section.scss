@@ -7,9 +7,6 @@
             .hero-slider-js{
                 .hero-slide{
                     margin: 0 10px;
-                    .hero-img{
-
-                    }
                 }
             }
         }
@@ -20,15 +17,15 @@
             .hero-text-wrap{
                 .hero-banner-heading{
                     font-weight: 600;
-                    font-size: 72px;
-                    line-height: 88px;
+                    font-size: 60px;
+                    line-height: 73px;
                     letter-spacing: -2px;
                     color: $buenogreen;
-                    width: 127%;
+                    /* width: 127%; */
                     margin-top: 0;
                     margin-bottom: 39px;
-                    font-family: Montserrat Alternates;
-                    max-width: 745px;
+                    font-family: 'Montserrat Alternates';
+                    /* max-width: 745px; */
                 }
                 .hero-banner-sub-text{
                     color: $black;
@@ -54,7 +51,11 @@
     .wp-block-columns{
         margin-bottom: 0;
     }
-    
+    .hero-grid{
+        &.gb-layout-columns-2>.gb-layout-column-wrap{
+            grid-template-columns: 1.2fr 1fr;
+        }
+    }
     @media(max-width:992px){
         margin-top: 0;
         margin-bottom: 50px;
