@@ -1,0 +1,22 @@
+.breadcrumbs-wrapper{
+    background: #E9F2A1;
+    padding: 16px 0 14px;
+    margin-top: 20px;
+    color: $black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    a{
+        color: $black-4;
+        font-weight: 400;
+        padding-right: 10px;
+        text-decoration: none !important;
+    }
+    .breadcrumb_last{
+        font-weight: 500;
+        padding-left: 10px
+    }
+    @media (max-width:992px){
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,91 @@
+.team-section{
+    .team-head{
+        font-family: Montserrat Alternates;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: -2px;
+        margin-bottom: 30px;
+        color: $black;
+    }
+    .team-subtext{
+        font-size: 18px;
+        line-height: 30px;
+        color: $black;
+        margin-bottom: 60px;
+    }
+    .team-cards-container{
+        .card-column{
+            .team-card{
+                .team-card-wrap{
+                    margin-bottom: 40px;
+                    .name{
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: $black;
+                        margin-bottom: 10px;
+                    }
+                    .designation{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;                       
+                        color: $black-3; 
+                        margin-bottom: 10px;                     
+                    }
+                    .description{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: $black;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:992px){
+        .team-head{
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 20px;
+        }
+        .team-subtext{
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        .team-cards-container{
+            .card-column{
+                flex-wrap: wrap;
+                .team-card{
+                    .team-card-wrap{
+                        flex-wrap: wrap;
+                        margin-bottom: 40px;
+                        .img-col{
+                            flex-basis: 100%!important;
+                            img{
+                                width: 90%;
+                            }
+                        }
+                        .text-col{
+                            flex-basis: 100%!important;
+                            margin-left: 10%;
+                            margin-top: -70px;
+                            padding: 20px;
+                            background: $color-white;
+                            position: relative;
+                            .linkedInImg{
+                                position: absolute;
+                                top: 20px;
+                                right: 20px;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        } 
+    }
+}
