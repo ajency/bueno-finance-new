@@ -108,3 +108,21 @@ input:-webkit-autofill:active {
     max-width: calc(100% - 10px);
     border-bottom: none;
 }
+
+/* recaptcha */
+.captcha-container{
+    background-color: transparent;
+    padding-top: 0;
+    margin-bottom: 10px;
+    .frm-g-recaptcha{
+        div{
+            div{
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
+    }
+    @media(max-width:768px){
+        margin-bottom: 20px;
+    }
+}

@@ -161,3 +161,6 @@ $(".footer-widgets .simple-social-icons ul li.ssi-facebook a svg title").after("
 $selectFieldParent = $(".with_frm_style select").closest(".form-field");
 $selectFieldParent.addClass("select-border");
 $(".select-border").css("border-bottom", "1px solid #4D4D4D");
+
+$captchFieldParent = $(".frm-g-recaptcha").closest(".form-field");
+$captchFieldParent.addClass("captcha-container");
