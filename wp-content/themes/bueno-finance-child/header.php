@@ -81,7 +81,15 @@ do_action( 'genesis_header' );
  * @since 1.0.0
  */
 do_action( 'genesis_after_header' );
-
+if ( !is_front_page() ){
+?>
+<div class="breadcrumbs-wrapper position-relative alignfull">
+	<div class="breadcrumbs-inside alignwide section-wrap">
+		<?php echo yoast_breadcrumb(); ?>
+	</div>
+</div>
+<?php
+}
 genesis_markup(
 	[
 		'open'    => '<div %s>',

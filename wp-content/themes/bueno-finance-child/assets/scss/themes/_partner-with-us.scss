@@ -2,27 +2,55 @@
     .page-title{
         margin-bottom: 30px !important;
     }
-    .address-box{
-        background-color: $light-gray;
-        padding: 22px 20px 20px;
-        .wp-block-group__inner-container{
-            p{
-                padding: 0 !important;
-                margin: 0 !important;
-                font-size: 16px;
-                line-height: 30px;
-                color: $text-color-3;
-
-                &:first-child{
-                    margin-bottom: 10px !important;
+    .gb-block-layout-column-gap-2 {
+        @media(min-width:992px){
+            grid-gap: 0 114px;
+        }
+    }
+    .map{
+        iframe{
+            width: 100%;
+        }
+        .address-box{
+            background-color: $light-gray;
+            padding: 22px 20px 20px;
+            margin-top: -7px;
+            .wp-block-group__inner-container{
+                p{
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $text-color-3;
+                    max-width: 379px;;
+    
+                    &:first-child{
+                        margin-bottom: 10px !important;
+                    }
+    
+                    strong{
+                        font-family: 'Montserrat Alternates';
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
                 }
-
-                strong{
-                    font-family: Montserrat Alternates;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 22px;
-                }
+            }
+        }
+    }
+    @media(max-width:600px){
+        .page-title{
+            margin-bottom: 20px;
+        }
+        .map{
+            margin-bottom: 30px;
+            iframe{
+                height: 300px;
+            }
+            .address-box{
+                background-color: #ffffff;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }
@@ -31,5 +59,10 @@
     .site-inner{
         padding: 60px 0;
         max-width: 100%;
+    }
+    @media(max-width:768px){
+        .site-inner{
+            padding: 20px 0 40px;
+        }
     }
 }
