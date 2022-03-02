@@ -142,3 +142,15 @@ button, a{
         line-height: 37px;
     }
 }
+
+.page-template-partner-with-us, .page-template-careers{
+    .site-inner{
+        padding: 60px 0;
+        max-width: 100%;
+    }
+    @media(max-width:768px){
+        .site-inner{
+            padding: 20px 0 40px;
+        }
+    }
+}
