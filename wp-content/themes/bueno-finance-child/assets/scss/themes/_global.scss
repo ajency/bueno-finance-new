@@ -40,7 +40,7 @@ body{
 button, a{
     outline: none !important;
 }
-.site-inner{
+.home .site-inner{
     padding-top: 0 !important;
 }
 .gb-block-button{
@@ -126,5 +126,19 @@ button, a{
                 bottom: -5px;
             }
         }
+    }
+}
+
+.page-title{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: -2px;
+    color: #000000;
+    @media(max-width:768px){
+        font-size: 30px;
+        line-height: 37px;
     }
 }
