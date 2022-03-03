@@ -1,0 +1,72 @@
+.opportunities-section{
+    padding: 50px 0px;
+    position: relative;
+    .opportunities-wrapper{
+        .nav-tabs {
+            display:none;
+            border-bottom: none;
+            .nav-item {
+                background: #427fad;
+                margin-right: 10px;
+                margin-bottom: 0px;
+            }
+            .nav-link{
+                border: none;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                color: #fff;
+            }
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+            background: #54bbca;
+            color: #fff;
+        }
+        @media(min-width:768px) {
+                .nav-tabs {
+                    display: flex;
+                }
+                .card {
+                    border: none;
+                    .card-header {
+                        display:none;
+                    }
+                    .collapse{
+                        display:block;
+                    }
+                }
+        }
+        
+        @media(max-width:767px){
+                .tab-content > .tab-pane {
+                    display: block !important;
+                    opacity: 1;
+                    margin-bottom: 10px;
+                }
+                .card-header {
+                    background: #427fad;
+                    color: #fff;
+                    border-bottom: 1px solid rgba(0,0,0,.125);
+                    h5{
+                        a{
+                            background: #427fad;
+                            color: #fff;
+                            border-bottom: none;
+                            text-decoration: none;
+                            font-size: 16px;
+                            display: block;
+                            i {
+                                float: right;
+                                padding-top: 5px;
+                            }
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .card-body {
+                    border: 1px solid #427fad;
+                }
+        }
+    }
+}

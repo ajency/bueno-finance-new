@@ -164,3 +164,21 @@ $(".select-border").css("border-bottom", "1px solid #4D4D4D");
 
 $captchFieldParent = $(".frm-g-recaptcha").closest(".form-field");
 $captchFieldParent.addClass("captcha-container");
+
+/* Tabs */
+$(document).ready(function(){
+    $(".opportunities-section .nav-tabs .nav-item:first-child .nav-link").addClass("active");
+    $(".opportunities-section .tab-content .tab-pane:first-child").addClass("show active");
+    $(".opportunities-section .tab-content .tab-pane:first-child .collapse").addClass("show");
+    // Add minus icon for collapse element which is open by default
+    $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+    });
+
+    // Toggle plus minus icon on show hide of collapse element
+    $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+    }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+    });
+});
