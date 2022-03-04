@@ -154,3 +154,32 @@ button, a{
         }
     }
 }
+
+// safari fix
+.gb-layout-columns-2>.gb-layout-column-wrap{
+    display: flex;
+}
+
+@media (max-width: 992px){
+.gb-layout-columns-2>.gb-layout-column-wrap{
+    flex-direction: column;
+}
+.hero-banner-section .hero-banner-wrap .hero-text-section{
+    order: 2;
+}        
+.scan-pay-section .scan-section1>.gb-layout-column-wrap .gb-block-layout-column:nth-child(1){
+    order: 2;
+}
+}
+
+@media(min-width:993px){
+    .gb-block-layout-column:nth-child(1){
+        margin-right: 2em;
+    }
+    .customer-grid .gb-block-layout-column:nth-child(1){
+        margin-right: 4em;
+    }
+    .scan-section1 .gb-block-layout-column:nth-child(1), .scan-section2 .gb-block-layout-column:nth-child(1){
+        margin-right: 6em;
+    }
+}
