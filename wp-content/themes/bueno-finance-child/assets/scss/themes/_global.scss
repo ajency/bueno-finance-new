@@ -58,6 +58,33 @@ button, a{
 .entry {
     margin-bottom: 0px;
 }
+.gb-button{
+    background-color: $buenogreen;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none !important;
+    &:hover{
+        color:#ffffff;
+    }
+    &--bordered{
+        background-color: transparent;
+        color: $buenogreen;
+        border: 1px solid $buenogreen;
+        &:hover{
+            color:$buenogreen;
+        }
+        svg{
+            path{
+                fill:$buenogreen;
+            }
+        }
+        &-icon{
+            .icon{
+                margin-right: 26px;
+            }
+        }
+    }
+}
 .header-button{
     padding: 15px 30px;
     background-color: #72941A;

@@ -170,15 +170,21 @@ $(document).ready(function(){
     $(".opportunities-section .nav-tabs .nav-item:first-child .nav-link").addClass("active");
     $(".opportunities-section .tab-content .tab-pane:first-child").addClass("show active");
     $(".opportunities-section .tab-content .tab-pane:first-child .collapse").addClass("show");
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
+    $(".opportunities-section .tab-content .tab-pane:not(.active) .card-header a").addClass("collapsed");
+    $(".opportunities-section .tab-content .tab-pane:not(.active) .card-header a").attr("aria-expanded","false");
+    $(".opportunities-section .tab-content .tab-pane:first-child .collapse .collapse").removeClass("show");
 
     // Toggle plus minus icon on show hide of collapse element
     $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        $(this).prev(".card-header").find("i").addClass("opened");
     }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        $(this).prev(".card-header").find("i").removeClass("opened");
+    });
+    
+    // Accordions
+    $('.acco-container .collapse').on('show.bs.collapse', function () {
+        $(this).prev(".panel-heading").find(".toggler p").text("Show less");
+      }).on('hide.bs.collapse', function(){
+        $(this).prev(".panel-heading").find(".toggler p").text("Show more");
     });
 });
