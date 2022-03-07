@@ -46,7 +46,7 @@
                             top: 0;
                             width: 92px;
                             height: 80px;
-                            background-image: url('../img/quotes.png');
+                            background-image: url('../img/green-quote.svg');
                             transform: translate(-10% , -70%);
                             background-size: contain;
                             z-index: -1;
@@ -56,7 +56,7 @@
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 30PX;
-                        color: $glow-green;
+                        color: $dark-green;
                     }
                 }
             }

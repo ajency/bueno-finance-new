@@ -1,5 +1,5 @@
 .form-field{
-    &:not(.frm_html_container):not(.vertical_radio){
+    &:not(.frm_html_container):not(.vertical_radio):not(.captcha-container){
         background-color: $form-fields;
     }
     /* upload Field */
