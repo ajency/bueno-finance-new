@@ -186,4 +186,25 @@
             grid-template-columns: 1fr 3.5fr;
         }
     }
+    @media only screen and (min-width: 990px){
+        .gb-2-col-wideright>.gb-layout-column-wrap {
+            .left-side{
+                width: 40%;
+                margin-right: 0;
+            }
+        }
+    }
+    @media (max-width: 992px){
+        .gb-layout-columns-2>.gb-layout-column-wrap{
+            flex-direction: row;
+        }
+    }
+    @media only screen and (min-width: 1400px){
+        .gb-2-col-wideright>.gb-layout-column-wrap {
+            .left-side{
+                width: 45%;
+                margin-right: 0;
+            }
+        }
+    }
 }

@@ -1,5 +1,5 @@
 .opportunities-section{
-    padding: 50px 0px;
+    padding: 60px 0px 0px;
     position: relative;
     .opportunities-wrapper{
         .card-body{
@@ -51,9 +51,7 @@
             .panel-group{
                 .panel{
                     &.panel-default{
-                        &:not(:last-child){
-                            margin-bottom: 30px;
-                        }
+                        margin-bottom: 30px;
                         .panel-heading{
                             a{
                                 display: block;
@@ -255,13 +253,13 @@
                     border-radius: 0;
                     border: none;
                     .card-header {
-                        padding-left: 0;
-                        padding-right: 16px;
+                        padding: 12px 16px 20px 0px;
                         background: transparent;
                         color: #000000;
                         border: none;
                         border-bottom: 1px solid $tabs-border;
                         a{
+                            font-family: 'Montserrat';
                             background: transparent;
                             color: #000000;
                             font-weight: normal;
@@ -273,17 +271,13 @@
                             i {
                                 float: right;
                                 padding-top: 5px;
-                                &.opened{
-                                    img{
-                                        transform: rotate(180deg);
-                                    }
-                                }
+                                transition: transform .3s ease-in-out;
                             }
                             &[aria-expanded="true"]{
                                 color: $buenogreen;
                                 font-weight: 600;
                                 i{
-                                    img{
+                                    svg{
                                         transform: rotate(180deg);
                                         transition: transform .3s ease-in-out;
                                     }
@@ -298,7 +292,7 @@
                             &.panel-default{
                                 .panel-heading{
                                     a{
-                                        padding: 10px;
+                                        padding: 10px 16px 10px 10px;
                                         .toggler{
                                             height: 30px;
                                             p{
@@ -352,6 +346,14 @@
                         }
                     }
                 }
+        }
+    }
+    @media(max-width:767px){
+        padding-top: 30px;
+        .opportunities-wrapper{
+            .section-heading{
+                margin-bottom: 18px;
+            }
         }
     }
 }
