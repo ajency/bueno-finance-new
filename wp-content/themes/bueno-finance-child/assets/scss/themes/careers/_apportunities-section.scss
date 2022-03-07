@@ -5,6 +5,9 @@
         .card-body{
             padding: 20px 0 0;
         }
+        a:not([href]):not([tabindex]){
+            color: #ffffff;
+        }
         .nav-tabs {
             display:none;
             border-color: $tabs-border;
@@ -353,6 +356,24 @@
         .opportunities-wrapper{
             .section-heading{
                 margin-bottom: 18px;
+            }
+        }
+    }
+}
+@media(min-width:769px){
+    .modal-dialog{
+        .modal-body{
+            .position-description{
+                display: none;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .modal-dialog{
+        .modal-body{
+            .position{
+                display: none;
             }
         }
     }

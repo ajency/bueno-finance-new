@@ -188,3 +188,15 @@ $(document).ready(function(){
         $(this).prev(".panel-heading").find(".toggler p").text("Show more");
     });
 });
+
+/* Modal */
+$(".form-toggler").click(function(){
+    $currentPosition = $(this).attr("data-position");
+});
+$('#careersModal').on('show.bs.modal', function (e) {
+    $('.modal .position input[type=text]').val($currentPosition);
+    $('.position-description .modalPosition').text($currentPosition);
+});
+$('#careersModal').on('hide.bs.modal', function (e) {
+    document.getElementById("form_careersform").reset();
+});

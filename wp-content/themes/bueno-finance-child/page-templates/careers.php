@@ -158,7 +158,7 @@ if( have_rows('job_categories') ):
                                                                 </div>
                                                                 <?php endif ?>
                                                                 <div class="buttons">
-                                                                    <a href="#" class="gb-button form-toggler"><?php echo $apply_via_form['label']; ?></a>
+                                                                <a data-toggle="modal" data-target="#careersModal" data-position="<?php echo $child_title ?>" class="gb-button form-toggler"><?php echo $apply_via_form['label']; ?></a>
                                                                     <?php if(!empty($apply_on_linkedIn_value)): ?>
                                                                     <a href="<?php echo $apply_on_linkedIn_value; ?>" class="gb-button gb-button--bordered gb-button--bordered-icon">
                                                                     <span class="icon">
@@ -279,7 +279,7 @@ if( have_rows('job_categories') ):
                                                     </div>
                                                     <?php endif ?>
                                                     <div class="buttons">
-                                                        <a href="#" class="gb-button form-toggler"><?php echo $apply_via_form['label']; ?></a>
+                                                    <a data-toggle="modal" data-target="#careersModal" data-position="<?php echo $child_title ?>" class="gb-button form-toggler"><?php echo $apply_via_form['label']; ?></a>
                                                         <?php if(!empty($apply_on_linkedIn_value)): ?>
                                                         <a href="<?php echo $apply_on_linkedIn_value; ?>" class="gb-button gb-button--bordered gb-button--bordered-icon">
                                                         <span class="icon">
@@ -312,5 +312,28 @@ if( have_rows('job_categories') ):
     <?php
 endif;
 ?>
+
+<!-- Modal -->
+<div class="modal fade" id="careersModal" tabindex="-1" role="dialog" aria-labelledby="careersModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careersModalLongTitle">Submit Your Application</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="position-description">Applying for the poistion of <span class="modalPosition">Senior Software Engineer</span></p>
+        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 'careersform', 'title' => false, 'description' => false ) ); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php
 get_footer();

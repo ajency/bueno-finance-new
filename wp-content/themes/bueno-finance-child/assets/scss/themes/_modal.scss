@@ -1,0 +1,91 @@
+.modal{
+    font-family: 'Montserrat';
+    z-index: 9999;
+    .modal-dialog{
+        min-width: 662px;
+        .modal-content{
+            border-radius: 0;
+        }
+        .frm_button_submit{
+            margin-top: 0 !important;
+        }
+        .frm_html_container{
+            padding-top: 0;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .modal-header{
+            align-items: center;
+            padding: 19px 30px 15px;
+            border:none;
+            .modal-title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 34px;
+                color: $buenogreen;
+            }
+            .close{
+                line-height: initial;
+                color: #000;
+                text-shadow: none;
+                opacity: 1;
+            }
+        }
+        .modal-body{
+            padding: 15px 30px 30px;
+        }
+        .with_frm_style .frm_form_fields > fieldset{
+            padding: 0;
+        }
+    }
+    @media(max-width:700px){
+        .modal-dialog{
+            min-width: auto;
+        }
+    }
+    @media(max-width:768px){
+        .modal-dialog{
+            .frm_submit{
+                display: flex;
+                justify-content: center;
+                .frm_button_submit{
+                    margin-top: 10px;
+                }
+            }
+            .modal-header{
+                align-items: flex-end;
+                padding-bottom: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                .modal-title{
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+            .modal-body{
+                padding-top: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                .position-description{
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #151515;
+                    max-width: 223px;
+                    margin-bottom: 30px;
+                    .modalPosition{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+.modal-backdrop{
+    background-color: #242424;
+    &.show{
+        opacity: .85;
+    }
+}

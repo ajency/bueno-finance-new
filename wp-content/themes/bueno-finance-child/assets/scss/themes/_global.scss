@@ -61,6 +61,7 @@ button, a{
 .gb-button{
     background-color: $buenogreen;
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     text-decoration: none !important;
     &:hover{

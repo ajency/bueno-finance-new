@@ -1,5 +1,89 @@
 .form-field{
-    background-color: $form-fields;
+    &:not(.frm_html_container):not(.vertical_radio){
+        background-color: $form-fields;
+    }
+    /* upload Field */
+    &.upload-box{
+        border: 1px dashed $form-upload-border;
+        padding-top: 10px;
+    }
+    .frm_description {
+        background-color: $background;
+        padding: 10px !important;
+        text-align: center !important;
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 300 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        color: $text-color-3 !important;
+    }
+    &.frm_html_container{
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        color: #000000 !important;
+    }
+    .frm_dropzone{
+        max-width: 100%;
+        background: transparent !important;
+        margin-top: 0;
+        .dz-message{
+            background-color: transparent;
+            border: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text-color-3;
+            margin-top: 0 !important;
+            padding: 25px 20px 36px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .frm_small_text{
+                display: none;
+            }
+            .frm_upload_icon{
+                &:before{
+                    margin-right: 20px;
+                    line-height: 100%;
+                    font-size: 0;
+                    content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='22' viewBox='0 0 14 22' fill='none'%3E%3Cpath d='M1 6.91V15C1 16.5913 1.63214 18.1174 2.75736 19.2426C3.88258 20.3679 5.4087 21 7 21C8.5913 21 10.1174 20.3679 11.2426 19.2426C12.3679 18.1174 13 16.5913 13 15V5C13 3.93913 12.5786 2.92172 11.8284 2.17157C11.0783 1.42143 10.0609 1 9 1C7.93913 1 6.92172 1.42143 6.17157 2.17157C5.42143 2.92172 5 3.93913 5 5V14.182C5 14.4446 5.05173 14.7047 5.15224 14.9474C5.25275 15.19 5.40007 15.4105 5.58579 15.5962C5.7715 15.7819 5.99198 15.9292 6.23463 16.0298C6.47728 16.1303 6.73736 16.182 7 16.182V16.182C7.53043 16.182 8.03914 15.9713 8.41421 15.5962C8.78929 15.2211 9 14.7124 9 14.182V7' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+                }
+            }
+        }
+        .dz-preview{
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .dz-image, .dz-column{
+                width: auto;
+            }
+            .dz-progress{
+                .dz-upload{
+                    background-color: $background;
+                }
+            }
+            &.dz-complete{
+                .dz-progress{
+                    background-color: $background;
+                    .dz-upload{
+                        background-color: $background;
+                    }
+                }
+            }
+        }
+        &.frm_single_upload.dz-started{
+            max-width: 100%;
+        }
+    }
     padding: 8px 0px 0px;
     label{
         font-family: 'Montserrat' !important;
@@ -124,5 +208,29 @@ input:-webkit-autofill:active {
     }
     @media(max-width:768px){
         margin-bottom: 20px;
+    }
+}
+
+/* checkbox */
+.vertical_radio{
+    .frm_checkbox{
+        padding-left: 22px;
+    }
+}
+.with_frm_style .vertical_radio .frm_checkbox label, .with_frm_style .vertical_radio .frm_radio label{
+    margin: 0;
+    padding-right: 0 !important;
+    text-indent: -32px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #000000 !important;
+}
+.with_frm_style .frm_radio input[type=radio], .with_frm_style .frm_checkbox input[type=checkbox]{
+    box-shadow: none !important;
+    margin-right: 10px !important;
+}
+.with_frm_style .frm_blank_field{
+    .frm_radio input[type=radio], .frm_checkbox input[type=checkbox]{
+        border-color: #B94A48;
     }
 }
