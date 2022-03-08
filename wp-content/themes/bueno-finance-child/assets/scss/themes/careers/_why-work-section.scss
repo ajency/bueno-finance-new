@@ -9,9 +9,10 @@
     .wp-block-media-text{
         display: flex;
         figure{
+            width: 81.41px;
             img{
-                width: 81.41px;
-                max-width: 81.41px;
+                height: 79.05px;
+                width: auto;
             }
         }
         &__content{

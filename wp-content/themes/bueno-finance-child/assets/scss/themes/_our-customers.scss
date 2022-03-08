@@ -72,7 +72,7 @@
         margin: 0;
         right: 0;
         bottom: 0;
-        width: calc(50% - 2em);
+        width: calc(50% - (-4.5em));
         justify-content: center;
         li{
             list-style: none;
@@ -152,7 +152,7 @@
                                 position: absolute;
                                 right: 0;
                                 top: -10px;
-                                background-image: url('../img/quotes.png');
+                                background-image: url('../img/green-quote.svg');
                                 width: 46px;
                                 height: 40px;
                                 transform: translateY(-100%) rotateY(180deg);
@@ -163,6 +163,17 @@
                     }
                 }
             }
+        }
+    }
+    @media (min-width: 993px){
+        .customer-grid .gb-block-layout-column:nth-child(1) {
+            margin-right: 0;
+        }
+    }
+    .gb-layout-columns-2>.gb-layout-column-wrap{
+        justify-content: center;
+        .wp-block-genesis-blocks-gb-column{
+            width: auto;
         }
     }
 }
