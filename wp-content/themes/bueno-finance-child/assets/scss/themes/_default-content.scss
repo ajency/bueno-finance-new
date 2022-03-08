@@ -1,0 +1,96 @@
+.default-content{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    ol{
+        padding-left: 22px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        li{
+            list-style-type: inherit;
+            line-height: 22px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            ul{
+                margin-left: -22px;
+                margin-top: 18px;
+                li{
+                    font-weight: normal;
+                    line-height: 30px;
+                    list-style-type: none;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                    ul, ol{
+                        margin-left: 0px;
+                        padding-left: 22px;
+                        margin-top: 30px;
+                        li{
+                            list-style-type: inherit;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        &.roman{
+            padding-left: 0px;
+            li{
+                list-style-type: none;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    h5{
+        margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: 'Montserrat';
+        strong{
+            font-weight: 600;
+        }
+    }
+    .wp-block-group{
+        p{
+            padding:0px !important;
+            margin-bottom: 30px;
+        }
+        &:last-child{
+            p{
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    @media(max-width:768px){
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-size: 16px;
+        line-height: 30px;
+        h5{
+            margin-bottom: 8px;
+        }
+        ol{
+            li{
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 30px;
+                ul{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

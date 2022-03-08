@@ -207,3 +207,6 @@ $(document).ready(function(){
     $(".faq-section .faqAccordion .card:first-child .card-header a").attr("aria-expanded","true");
     $(".faq-section .faqAccordion .card:first-child .collapse").addClass("show");
 });
+
+/* header bar template */
+$('.page-template-header-bar .default-content li:contains("(i)")').parent().addClass("roman");

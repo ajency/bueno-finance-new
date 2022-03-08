@@ -1,7 +1,7 @@
 .page-header{
     background-color: $background;
-    padding-top:30px;
-    padding-bottom:61px;
+    padding-top:50px;
+    padding-bottom:49px;
     .wp-block-columns{
         margin-bottom: 0px;
     }
@@ -17,6 +17,13 @@
         line-height: 30px;
         color: #000000;
     }
+    .last-updated-date{
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
     @media(max-width:768px){
         padding-top:40px;
         padding-bottom:40px;
@@ -25,6 +32,10 @@
         }
         .page-description{
             font-size: 18px;
+        }
+        .last-updated-date{
+            font-weight: 500;
+            line-height: 30px;
         }
     }
 }
