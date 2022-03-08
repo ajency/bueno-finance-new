@@ -171,7 +171,7 @@ button, a{
     }
 }
 
-.page-template-partner-with-us, .page-template-careers{
+.page-template-partner-with-us, .page-template-careers, .page-template-faq{
     .site-inner{
         padding: 60px 0;
         max-width: 100%;
@@ -180,6 +180,12 @@ button, a{
         .site-inner{
             padding: 20px 0 40px;
         }
+    }
+}
+.page-template-faq{
+    .site-inner{
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -211,3 +217,4 @@ button, a{
         margin-right: 6em;
     }
 }
+// safari fix end

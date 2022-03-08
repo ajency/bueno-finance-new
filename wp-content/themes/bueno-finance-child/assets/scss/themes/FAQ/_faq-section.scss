@@ -1,0 +1,97 @@
+.faq-section{
+    padding-top: 10px;
+    .faqAccordion{
+        .card{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $buenogreen;
+            border-radius: 0;
+            &-header{
+                background: transparent;
+                border: none;
+                padding: 0px;
+                &-wrapper{
+                    padding: 20px 0px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition: padding .2s ease;
+                    &[aria-expanded="true"]{
+                        padding-bottom: 18px;
+                    }
+                    .faq-question{
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #000000;
+                    }
+                    .faq-toggler{
+                        svg{
+                            line{
+                                transition: opacity .2s ease-in-out;
+                            }
+                        }
+                    }
+                    &[aria-expanded="true"]{
+                        .faq-toggler{
+                            svg{
+                                line{
+                                    &:nth-child(2){
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-body{
+                padding: 0px;
+                padding-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #000000;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+                ul, ol{
+                    padding-left: 18px;
+                    li{
+                        font-size: 18px;
+                        line-height: 30px;
+                        font-weight: normal;
+                        color: #000000;
+                        list-style-type: inherit;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:768px){
+        .faqAccordion{
+            .card{
+                &:last-child{
+                    border-bottom: none;
+                }
+                &-header{
+                    &-wrapper{
+                        padding:30px 0px;
+                        &[aria-expanded="true"]{
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+                &-body{
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+    @media(min-width:769px){
+        padding-bottom: 80px;
+    }
+}

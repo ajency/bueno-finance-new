@@ -165,7 +165,7 @@ $(".select-border").css("border-bottom", "1px solid #4D4D4D");
 $captchFieldParent = $(".frm-g-recaptcha").closest(".form-field");
 $captchFieldParent.addClass("captcha-container");
 
-/* Tabs */
+/* Opportunities Tabs */
 $(document).ready(function(){
     $(".opportunities-section .nav-tabs .nav-item:first-child .nav-link").addClass("active");
     $(".opportunities-section .tab-content .tab-pane:first-child").addClass("show active");
@@ -199,4 +199,11 @@ $('#careersModal').on('show.bs.modal', function (e) {
 });
 $('#careersModal').on('hide.bs.modal', function (e) {
     document.getElementById("form_careersform").reset();
+});
+
+/* FAQ */
+$(document).ready(function(){
+    $(".faq-section .faqAccordion .card:first-child .card-header a").removeClass("collapsed");
+    $(".faq-section .faqAccordion .card:first-child .card-header a").attr("aria-expanded","true");
+    $(".faq-section .faqAccordion .card:first-child .collapse").addClass("show");
 });
