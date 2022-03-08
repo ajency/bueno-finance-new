@@ -44,11 +44,37 @@
         }
     }
     ul{
-        &.roman{
+        &.roman, &.numeric{
             padding-left: 0px;
             li{
                 list-style-type: none;
+            }
+        }
+        &.roman{
+            li{
                 margin-bottom: 30px;
+            }
+        }
+        &.numeric{
+            margin-top: 0px;
+            li{
+                margin-bottom: 0px;
+            }
+        }
+        &.alphabets{
+            li{
+                list-style-type: none;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 30px;
+
+                ul{
+                    padding-left: 0px;
+                    li{
+                        font-weight: 400;
+                    }
+                }
             }
         }
     }
@@ -60,6 +86,9 @@
         strong{
             font-weight: 600;
         }
+    }
+    p{
+        margin-bottom: 30px;
     }
     .wp-block-group{
         p{
@@ -79,6 +108,9 @@
         padding-bottom: 40px;
         font-size: 16px;
         line-height: 30px;
+        .para-spacer{
+            height: 0px !important;
+        }
         h5{
             margin-bottom: 8px;
         }
@@ -89,6 +121,14 @@
                 margin-bottom: 30px;
                 ul{
                     margin-top: 10px;
+                    &.alphabets{
+                        margin-top: 20px;
+                        li{
+                            font-size: 16px;
+                            line-height: 30px;
+                            margin-bottom: 20px;
+                        }
+                    }
                 }
             }
         }

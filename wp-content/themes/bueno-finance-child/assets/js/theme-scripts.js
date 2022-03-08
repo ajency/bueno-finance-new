@@ -210,3 +210,5 @@ $(document).ready(function(){
 
 /* header bar template */
 $('.page-template-header-bar .default-content li:contains("(i)")').parent().addClass("roman");
+$('.page-template-header-bar .default-content li:contains("(1)")').parents().eq(0).addClass("numeric");
+$('.page-template-header-bar .default-content li:contains("a. Necessary Cookies")').parents().eq(0).addClass("alphabets");
