@@ -105,6 +105,7 @@
                                         line-height: 30px;
                                         display: inline-flex;
                                         align-items: center;
+                                        color:#000000;
                                         .icon{
                                             margin-right: 10px;
                                             display: block;
@@ -317,6 +318,11 @@
                                                  margin-right: 0;
                                                 &:not(:last-child){
                                                     margin-bottom: 4px;
+                                                }
+                                                &.job-category, &.job-location, &.job-type{
+                                                    .icon{
+                                                        width: 22px;
+                                                    }
                                                 }
                                             }
                                         }
