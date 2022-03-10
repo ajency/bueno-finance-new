@@ -226,7 +226,7 @@
         .section-heading{
             margin-bottom: 30px;
         }
-        @media(min-width:768px) {
+        @media(min-width:769px) {
                 .nav-tabs {
                     display: flex;
                 }
@@ -248,7 +248,7 @@
                     }
                 }
         }
-        @media(max-width:767px){
+        @media(max-width:768px){
                 .tab-content > .tab-pane {
                     display: block !important;
                     opacity: 1;
@@ -358,7 +358,7 @@
                 }
         }
     }
-    @media(max-width:767px){
+    @media(max-width:768px){
         padding-top: 30px;
         .opportunities-wrapper{
             .section-heading{
