@@ -16,7 +16,7 @@
             z-index: 2;
             .hero-text-wrap{
                 .hero-banner-heading{
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 60px;
                     line-height: 73px;
                     letter-spacing: -2px;
@@ -30,7 +30,7 @@
                 .hero-banner-sub-text{
                     color: $black;
                     font-weight: 500;
-                    font-size: 22px;
+                    font-size: 18px;
                     line-height: 30px;
                     letter-spacing: -0.5px;
                     margin-bottom: 0;
@@ -63,6 +63,7 @@
             .hero-text-section{
                 .hero-text-wrap{
                     .hero-banner-heading{
+                        font-weight: 600;
                         font-size: 36px;
                         line-height: 44px;
                         width: 100%;
