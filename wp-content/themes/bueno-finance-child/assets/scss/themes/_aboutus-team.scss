@@ -67,6 +67,10 @@
                     .team-card-wrap{
                         flex-wrap: wrap;
                         margin-bottom: 40px;
+                        .name{
+                            font-size: 22px;
+                            line-height: 27px;
+                        }
                         .img-col{
                             flex-basis: 100%!important;
                             img{
