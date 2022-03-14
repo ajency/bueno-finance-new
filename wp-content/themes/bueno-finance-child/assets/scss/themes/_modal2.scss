@@ -1,0 +1,15 @@
+.jobsModal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(36, 36, 36, 0.85);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}

@@ -96,7 +96,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: true,
@@ -197,6 +197,21 @@ $(".form-toggler").click(function(){
 $('#careersModal').on('show.bs.modal', function (e) {
     $('.modal .position input[type=text]').val($currentPosition);
     $('.position-description .modalPosition').text($currentPosition);
+    
+    $(document).ready(function () {
+        $(window).on("resize", function (e) {
+            checkScreenSize();
+        });
+    
+        checkScreenSize();
+        
+        function checkScreenSize(){
+            var newWindowWidth = $(window).width();
+            if (newWindowWidth < 769) {
+                $("body").css("overflow","visible");
+            }
+        }
+    });
 });
 $('#careersModal').on('hide.bs.modal', function (e) {
     document.getElementById("form_careersform").reset();
@@ -213,3 +228,32 @@ $(document).ready(function(){
 $('.page-template-header-bar .default-content li:contains("(i)")').parent().addClass("roman");
 $('.page-template-header-bar .default-content li:contains("(1)")').parents().eq(0).addClass("numeric");
 $('.page-template-header-bar .default-content li:contains("a. Necessary Cookies")').parents().eq(0).addClass("alphabets");
+
+/* Jobs Modal */
+/* $(document).ready(function(){
+	$('.jobform-toggle').click(function(event){
+		showModal();
+		event.stopPropagation();
+	});
+	$('.jobsModal .close').click(function(){
+		hideModal();
+	});
+	
+	$('.modal-dialog').click(function(event){
+       event.stopPropagation(); 
+    });
+});
+
+function showModal(){
+    $("body").addClass("modal-open");
+	$('#jobsModal').fadeIn('fast');
+}
+
+function hideModal(){
+    $("body").removeClass("modal-open");
+	$('#jobsModal').fadeOut('fast');
+}
+
+$(document).on("click", function () {
+	hideModal();
+}); */

@@ -21,6 +21,7 @@
                 .team-card-wrap{
                     margin-bottom: 40px;
                     .name{
+                        font-family: Montserrat Alternates;
                         font-weight: 600;
                         font-size: 20px;
                         line-height: 24px;
@@ -66,6 +67,10 @@
                     .team-card-wrap{
                         flex-wrap: wrap;
                         margin-bottom: 40px;
+                        .name{
+                            font-size: 22px;
+                            line-height: 27px;
+                        }
                         .img-col{
                             flex-basis: 100%!important;
                             img{

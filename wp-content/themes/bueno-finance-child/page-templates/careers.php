@@ -101,14 +101,14 @@ if( have_rows('job_categories') ):
                                                 $child_title = get_sub_field('job_title');
                                                 $job_type = get_sub_field('job_type');
                                                 $job_location = get_sub_field('job_location');
-                                                $about_the_role = get_sub_field_object('about_the_role');
-                                                $about_the_role_value = get_sub_field('about_the_role');
+                                                $requirements = get_sub_field_object('requirements');
+                                                $requirements_value = get_sub_field('requirements');
                                                 $what_youll_be_doing = get_sub_field_object('what_youll_be_doing');
                                                 $what_youll_be_doing_value = get_sub_field('what_youll_be_doing');
-                                                $what_youll_need= get_sub_field_object('what_youll_need');
-                                                $what_youll_need_value= get_sub_field('what_youll_need');
-                                                $nice_to_have= get_sub_field_object('nice_to_have');
-                                                $nice_to_have_value= get_sub_field('nice_to_have');
+                                                $behavioural_skills= get_sub_field_object('behavioural_skills');
+                                                $behavioural_skills_value= get_sub_field('behavioural_skills');
+                                                $so_what_do_we_offer= get_sub_field_object('so_what_do_we_offer');
+                                                $so_what_do_we_offer_value= get_sub_field('so_what_do_we_offer');
                                                 $apply_via_form= get_sub_field_object('apply_via_form');
                                                 $apply_on_linkedIn= get_sub_field_object('apply_on_linkedIn');
                                                 $apply_on_linkedIn_value = get_sub_field('apply_on_linkedIn');
@@ -135,26 +135,26 @@ if( have_rows('job_categories') ):
                                                         </div>
                                                         <div id="collapse-<?php echo $all_jobs; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php echo $all_jobs; ?>">
                                                             <div class="panel-body">
-                                                                <?php if($about_the_role): ?>
-                                                                <h6 class="title"><?php echo $about_the_role['label']; ?></h6>
-                                                                <p><?php echo $about_the_role['value']; ?></p>
-                                                                <?php endif ?>
-                                                                <?php if($what_youll_be_doing): ?>
+                                                                <?php if($what_youll_be_doing_value): ?>
                                                                 <h6 class="title"><?php echo $what_youll_be_doing['label']; ?></h6>
                                                                 <div class="editor-content">
                                                                     <?php echo $what_youll_be_doing['value']; ?>
                                                                 </div>
                                                                 <?php endif ?>
-                                                                <?php if($what_youll_need): ?>
-                                                                <h6 class="title"><?php echo $what_youll_need['label']; ?></h6>
+                                                                <?php if($requirements_value): ?>
+                                                                <h6 class="title"><?php echo $requirements['label']; ?></h6>
+                                                                <p><?php echo $requirements['value']; ?></p>
+                                                                <?php endif ?>
+                                                                <?php if($behavioural_skills_value): ?>
+                                                                <h6 class="title"><?php echo $behavioural_skills['label']; ?></h6>
                                                                 <div class="editor-content">
-                                                                    <?php echo $what_youll_need['value']; ?>
+                                                                    <?php echo $behavioural_skills['value']; ?>
                                                                 </div>
                                                                 <?php endif ?>
-                                                                <?php if($nice_to_have_value): ?>
-                                                                <h6 class="title"><?php echo $nice_to_have['label']; ?></h6>
+                                                                <?php if($so_what_do_we_offer_value): ?>
+                                                                <h6 class="title"><?php echo $so_what_do_we_offer['label']; ?></h6>
                                                                 <div class="editor-content">
-                                                                    <?php echo $nice_to_have['value']; ?>
+                                                                    <?php echo $so_what_do_we_offer['value']; ?>
                                                                 </div>
                                                                 <?php endif ?>
                                                                 <div class="buttons">
@@ -222,14 +222,14 @@ if( have_rows('job_categories') ):
                                         $child_title = get_sub_field('job_title');
                                         $job_type = get_sub_field('job_type');
                                         $job_location = get_sub_field('job_location');
-                                        $about_the_role = get_sub_field_object('about_the_role');
-                                        $about_the_role_value = get_sub_field('about_the_role');
+                                        $requirements = get_sub_field_object('requirements');
+                                        $requirements_value = get_sub_field('requirements');
                                         $what_youll_be_doing = get_sub_field_object('what_youll_be_doing');
                                         $what_youll_be_doing_value = get_sub_field('what_youll_be_doing');
-                                        $what_youll_need= get_sub_field_object('what_youll_need');
-                                        $what_youll_need_value= get_sub_field('what_youll_need');
-                                        $nice_to_have= get_sub_field_object('nice_to_have');
-                                        $nice_to_have_value= get_sub_field('nice_to_have');
+                                        $behavioural_skills= get_sub_field_object('behavioural_skills');
+                                        $behavioural_skills_value= get_sub_field('behavioural_skills');
+                                        $so_what_do_we_offer= get_sub_field_object('so_what_do_we_offer');
+                                        $so_what_do_we_offer_value= get_sub_field('so_what_do_we_offer');
                                         $apply_via_form= get_sub_field_object('apply_via_form');
                                         $apply_on_linkedIn= get_sub_field_object('apply_on_linkedIn');
                                         $apply_on_linkedIn_value = get_sub_field('apply_on_linkedIn');
@@ -256,26 +256,28 @@ if( have_rows('job_categories') ):
                                             </div>
                                             <div id="collapse-<?php echo $job_post_index; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php echo $job_post_index; ?>">
                                                 <div class="panel-body">
-                                                    <?php if($about_the_role): ?>
-                                                    <h6 class="title"><?php echo $about_the_role['label']; ?></h6>
-                                                    <p><?php echo $about_the_role['value']; ?></p>
-                                                    <?php endif ?>
-                                                    <?php if($what_youll_be_doing): ?>
+                                                    <?php if($what_youll_be_doing_value): ?>
                                                     <h6 class="title"><?php echo $what_youll_be_doing['label']; ?></h6>
                                                     <div class="editor-content">
                                                         <?php echo $what_youll_be_doing['value']; ?>
                                                     </div>
                                                     <?php endif ?>
-                                                    <?php if($what_youll_need): ?>
-                                                    <h6 class="title"><?php echo $what_youll_need['label']; ?></h6>
+                                                    <?php if($requirements_value): ?>
+                                                    <h6 class="title"><?php echo $requirements['label']; ?></h6>
                                                     <div class="editor-content">
-                                                        <?php echo $what_youll_need['value']; ?>
+                                                    <?php echo $requirements['value']; ?>
                                                     </div>
                                                     <?php endif ?>
-                                                    <?php if($nice_to_have_value): ?>
-                                                    <h6 class="title"><?php echo $nice_to_have['label']; ?></h6>
+                                                    <?php if($behavioural_skills_value): ?>
+                                                    <h6 class="title"><?php echo $behavioural_skills['label']; ?></h6>
                                                     <div class="editor-content">
-                                                        <?php echo $nice_to_have['value']; ?>
+                                                        <?php echo $behavioural_skills['value']; ?>
+                                                    </div>
+                                                    <?php endif ?>
+                                                    <?php if($so_what_do_we_offer_value): ?>
+                                                    <h6 class="title"><?php echo $so_what_do_we_offer['label']; ?></h6>
+                                                    <div class="editor-content">
+                                                        <?php echo $so_what_do_we_offer['value']; ?>
                                                     </div>
                                                     <?php endif ?>
                                                     <div class="buttons">
@@ -334,6 +336,29 @@ endif;
     </div>
   </div>
 </div>
+
+<!-- <div class="d-none">
+<a data-position="Web Developer" class="gb-button jobform-toggle">Apply Via Form</a>
+<div class="jobsModal" id="jobsModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careersModalLongTitle">Submit Your Application</h5>
+        <button type="button" class="close">
+            <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="position-description">Applying for the poistion of <span class="modalPosition">Senior Software Engineer</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
 
 <?php
 get_footer();
