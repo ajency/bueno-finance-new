@@ -95,6 +95,9 @@
         @media (min-width:1501px){
             padding-right: 91px;
         }
+        @media (max-width: 1250px){
+            width: 50%;
+        }
     }
 
     @media (max-width:992px){
@@ -167,7 +170,7 @@
     }
     @media (min-width: 993px){
         .customer-grid .gb-block-layout-column:nth-child(1) {
-            margin-right: 0;
+            // margin-right: 0;
         }
     }
     .gb-layout-columns-2>.gb-layout-column-wrap{

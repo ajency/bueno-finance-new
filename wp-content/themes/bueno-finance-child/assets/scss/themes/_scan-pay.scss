@@ -203,6 +203,8 @@
                 text-align: center;
                 line-height: 24px;
                 font-weight: 500;
+                margin-bottom: 30px;
+                margin-top: 24px;
             }
         }
         .scan-code-images{
@@ -219,7 +221,8 @@
     }
     @media(max-width:768px){
         padding-top: 215px;
-        padding-bottom: 43.3px;
+        // padding-bottom: 43.3px;
+        padding-bottom: 21px;
         background-image: url('../img/mobbg.png');
         margin-top: -106px;
         .mob-img-container{

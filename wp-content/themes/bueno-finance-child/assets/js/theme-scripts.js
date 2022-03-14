@@ -8,6 +8,7 @@ $(document).ready(function(){
         arrows: false,
         dots: false,
         speed: 1000,
+        fade: true,
         cssEase: 'ease-in-out',
         touchThreshold: 100
     });
@@ -16,7 +17,7 @@ $(document).ready(function(){
 /* circle background size */
 $(window).on("load resize",function(e){
     $targetColumn = $(".why-bueno-section .left-side");
-    $columnWidth = $targetColumn.innerWidth();
+    $columnWidth = $targetColumn.innerWidth() - 40;
     $containerMargin = (($(".site-container").innerWidth()) - ($(".why-bueno-section .alignwide").innerWidth()))/2;
     $(".why-bueno-section .gb-container-image-wrap .gb-container-image").css("width", $columnWidth + $containerMargin);
 });
@@ -44,13 +45,13 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    cssEase: 'ease',
+                    cssEase: 'linear',
                     centerMode: true,
                     arrows: false,
                     dots: false,
-                    speed: 300,
+                    speed: 800,
                     infinite: true,
-                    autoplaySpeed: 900,
+                    autoplaySpeed: 2000,
                     autoplay: true,
                     centerPadding: '22px',
                 }

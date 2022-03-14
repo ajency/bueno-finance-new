@@ -16,6 +16,12 @@
         figure{
             width: 60px;
         }
+        .wp-block-media-text__content{
+            @media(min-width:691px){
+                padding-left: 30px;
+                padding-right: 0;
+            }
+        }
         p{
             margin-bottom: 0px;
         }
@@ -66,7 +72,7 @@
     }
     @media(max-width:690px){
         background: $background;
-        padding-top:50px;
+        padding-top:40px;
         margin-bottom: 0px;
         .section-heading{
             text-align: center;
@@ -97,9 +103,10 @@
             }
         }
         .book-demo-section{
-            padding: 31px 30px 30px;
-            border: 1px solid $buenogreen;
-            background: transparent;
+            padding: 31px 45px 30px;
+            // border: 1px solid $buenogreen;
+            border: 0;
+            background: $color-white;
             border-radius: 8px;
             text-align: center;
             .wp-block-columns{

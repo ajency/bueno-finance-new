@@ -68,7 +68,7 @@
             width: calc(100% /2.5);
             .widget{
                 .widget-wrap{
-                    max-width: 354px;
+                    max-width: 400px;
                 }
                 &.widget_media_image{
                     margin-bottom: 17.88px;
@@ -132,6 +132,7 @@ footer{
                         .widget-wrap{
                             .textwidget{
                                 p{
+                                    margin-bottom: 16px;
                                     strong{
                                         font-size: 18px;
                                         line-height: 30px;

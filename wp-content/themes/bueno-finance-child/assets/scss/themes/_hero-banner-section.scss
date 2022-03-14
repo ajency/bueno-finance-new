@@ -16,15 +16,15 @@
             z-index: 2;
             .hero-text-wrap{
                 .hero-banner-heading{
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 60px;
                     line-height: 73px;
                     letter-spacing: -2px;
                     color: $buenogreen;
                     /* width: 127%; */
                     margin-top: 0;
-                    margin-bottom: 39px;
-                    font-family: 'Montserrat Alternates';
+                    margin-bottom: 20px;
+                    font-family: 'Montserrat', Alternates;
                     /* max-width: 745px; */
                 }
                 .hero-banner-sub-text{
@@ -67,13 +67,17 @@
                         line-height: 44px;
                         width: 100%;
                         margin-bottom: 20px;
+                        font-weight: 600;
                     }
                     .hero-banner-sub-text{
                         color: $black-2;
                         font-size: 16px;
                         line-height: 24px;
                         letter-spacing: normal;
-                        margin-bottom: 26px;
+                        margin-bottom: 10px;
+                        @media (max-width: 500px){
+                            max-width: 285px;
+                        }
                     }
                     .hero-banner-btn{
                         a{

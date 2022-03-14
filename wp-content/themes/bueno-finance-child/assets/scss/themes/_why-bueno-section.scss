@@ -26,8 +26,10 @@
             }
         }
         .gb-container-image{
-            object-fit: contain;
-            object-position: left bottom;
+            // object-fit: contain;
+            // object-position: left bottom;
+            object-fit: cover;
+            object-position: right bottom;
         }
     }
     .features-container{
@@ -50,6 +52,8 @@
 
                     img{
                         margin-right: 30px;
+                        width: 60px !important;
+                        object-fit: contain;
                     }
                 }
             }
@@ -70,15 +74,19 @@
             p{
                 color: $light-green;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 30px;
                 margin-bottom:0px;
+            
+                @media (min-width:769px) and (max-width:1250px) {
+                    max-width: 126px;
+                }
             }
 
             .stat-number{
-                font-size: 30px;
-                line-height: 37px;
-                margin-bottom: 2px;
+                font-size: 24px;
+                line-height: 29.26px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -100,7 +108,8 @@
             &__stat{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                // justify-content: center;
+                justify-content: flex-start;
                 /* max-width: 206px; */
                 min-height: 99px;
             }
