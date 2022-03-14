@@ -337,5 +337,28 @@ endif;
   </div>
 </div>
 
+<!-- <div class="d-none">
+<a data-position="Web Developer" class="gb-button jobform-toggle">Apply Via Form</a>
+<div class="jobsModal" id="jobsModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careersModalLongTitle">Submit Your Application</h5>
+        <button type="button" class="close">
+            <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="position-description">Applying for the poistion of <span class="modalPosition">Senior Software Engineer</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
 <?php
 get_footer();
