@@ -89,6 +89,15 @@
                                     margin-bottom: 0;
                                 }
                             }
+                            .footer-heading{
+                                margin-bottom: 10px;
+                                font-family: 'Montserrat';
+                                strong{
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                }
+                            }
                         }
                     }
                 }
@@ -140,6 +149,13 @@ footer{
                                     &:nth-child(2){
                                         font-size: 18px;
                                         line-height: 24px;
+                                    }
+                                }
+                                .footer-heading{
+                                    margin-bottom: 16px;
+                                    strong{
+                                        font-size: 18px;
+                                        line-height: 22px;
                                     }
                                 }
                             }
