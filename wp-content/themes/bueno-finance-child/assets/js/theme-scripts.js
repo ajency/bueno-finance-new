@@ -79,7 +79,7 @@ $ourPartnersTestimonialSlider.slick({
 });
 });
 $(document).ready(function(){
-    $('.mobile-slider-js').slick({
+    $('.scan-section2 .mobile-slider-js').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -92,6 +92,21 @@ $(document).ready(function(){
         cssEase: 'ease-in-out',
         touchThreshold: 100
     });
+    // $('.mobile-slider-js').slick({
+    //     infinite: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     autoplay: false,
+    //     autoplaySpeed: 2000,
+    //     arrows: false,
+    //     dots: false,
+    //     speed: 1000,
+    //     fade: false,
+    //     cssEase: 'ease-in-out',
+    //     touchThreshold: 100,
+    //     centerMode: true,
+    //     centerPadding: '50px'
+    // });
     $('.our-customer-slider-js').slick({
         infinite: true,
         slidesToShow: 1,
@@ -257,3 +272,63 @@ function hideModal(){
 $(document).on("click", function () {
 	hideModal();
 }); */
+
+$(document).ready(function(){
+    var rev = $('.scan-section1 .mobile-slider-js');
+    rev.on('init', function(event, slick, currentSlide) {
+    var
+        cur = $(slick.$slides[slick.currentSlide]),
+        next = cur.next(),
+        next2 = cur.next().next(),
+        prev = cur.prev(),
+        prev2 = cur.prev().prev();
+    prev.addClass('slick-sprev');
+    next.addClass('slick-snext');  
+    // prev2.addClass('slick-sprev2');
+    // next2.addClass('slick-snext2');  
+    cur.removeClass('slick-snext').removeClass('slick-sprev').removeClass('slick-snext2').removeClass('slick-sprev2');
+    slick.$prev = prev;
+    slick.$next = next;
+    }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    console.log('beforeChange');
+    var
+        cur = $(slick.$slides[nextSlide]);
+    console.log(slick.$prev, slick.$next);
+    slick.$prev.removeClass('slick-sprev');
+    slick.$next.removeClass('slick-snext');
+    // slick.$prev.prev().removeClass('slick-sprev2');
+    // slick.$next.next().removeClass('slick-snext2');
+    next = cur.next(),  
+    prev = cur.prev();
+    //prev2.prev().prev();
+    //next2.next().next();
+    prev.addClass('slick-sprev');
+    next.addClass('slick-snext');
+    // prev.prev().addClass('slick-sprev2');
+    // next.next().addClass('slick-snext2');
+    slick.$prev = prev;
+    slick.$next = next;
+    cur.removeClass('slick-next').removeClass('slick-sprev').removeClass('slick-next2').removeClass('slick-sprev2');
+    });
+
+    rev.slick({
+    speed: 1000,
+    arrows: true,
+    dots: false,
+    focusOnSelect: true,
+    prevArrow: '<button> prev</button>',
+    nextArrow: '<button> next</button>',
+    infinite: true,
+    centerMode: true,
+    slidesPerRow: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: '0',
+    arrows: false,
+    swipe: true,
+    customPaging: function(slider, i) {
+        return '';
+    },
+    /*infinite: false,*/
+    });
+})
