@@ -2,6 +2,7 @@
     background-color: $background;
     .page-title{
         margin: 0px 0 60px;
+        color: #134E19;
     }
     .wp-block-columns, figure{
         margin-bottom: 0;
@@ -84,8 +85,8 @@
                 width:auto;
                 img{
                     height: auto;
-                    width: 30px;
-                    max-width: 30px;
+                    width: 40px;
+                    max-width: 40px;
                 }
             }
             &__content{
@@ -123,6 +124,11 @@
                 }
             }
         }
+    }
+}
+.position{
+    input{
+        color: #747474 !important;
     }
 }
 .page-template-careers{
