@@ -296,7 +296,7 @@ $(document).ready(function(){
     console.log(slick.$prev, slick.$next);
 
     $('.scan-pay-section .icon-text-section .wp-block-media-text').removeClass('active')
-    $('.slide-index-'+currentSlide).addClass('active')
+    $('.slide-index-'+nextSlide).addClass('active')
     
     
     slick.$prev.removeClass('slick-sprev');
@@ -333,9 +333,9 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
     arrows: false,
     swipe: true,
-    // customPaging: function(slider, i) {
-    //     return '';
-    // },
+    customPaging: function(slider, i) {
+        return '';
+    },
     /*infinite: false,*/
     });
 

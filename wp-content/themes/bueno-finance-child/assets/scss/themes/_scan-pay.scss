@@ -296,14 +296,23 @@
         .wp-block-columns{
             margin-bottom: 0px;
         }
-        .scan-mobile-slider{
-            @media (max-width: 992px){ 
-                .icon-text-section .text-content{
-                    margin-top: 14px;
-                }
+        .mobile-slider-js .slick-slide img{
+            width: 56%;
+        }
+        .mob-img-container{
+            .img-right, .img-left{
+                width: 37%;
+            }
+        }
+        @media (max-width: 992px){ 
+            .scan-mobile-slider{
+                margin-bottom: 0 !important;
                 .slick-slide img{
                     width: 73%;
                 }
+            }
+            .text-content{
+                margin-top: 11px !important;
             }
         }
 

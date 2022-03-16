@@ -119,6 +119,11 @@
             }
             .gb-block-button{
                 margin: 30px auto 0px;
+                @media (max-width:374px){
+                    a{
+                        min-width: 190px;
+                    }
+                }
             }
         }
         .description{
