@@ -266,7 +266,8 @@
                         a{
                             font-family: 'Montserrat';
                             background: transparent;
-                            color: #000000;
+                            color: #134E19;
+                            font-weight: 600 !important;
                             font-weight: normal;
                             border-bottom: none;
                             text-decoration: none;
@@ -277,13 +278,16 @@
                                 float: right;
                                 padding-top: 5px;
                                 transition: transform .3s ease-in-out;
+                                svg,img{
+                                    transform: rotate(180deg);
+                                }
                             }
                             &[aria-expanded="true"]{
                                 color: $buenogreen;
                                 font-weight: 600;
                                 i{
-                                    svg{
-                                        transform: rotate(180deg);
+                                    svg,img{
+                                        transform: rotate(0deg);
                                         transition: transform .3s ease-in-out;
                                     }
                                 }
