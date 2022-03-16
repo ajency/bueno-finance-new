@@ -189,8 +189,8 @@ input:-webkit-autofill:active {
     padding: 5px 10px;
 }
 .with_frm_style select{
-    max-width: calc(100% - 10px);
-    border-bottom: none;
+    /* max-width: calc(100% - 10px); */
+    /* border-bottom: none; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
