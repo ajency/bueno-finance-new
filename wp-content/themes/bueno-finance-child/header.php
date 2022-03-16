@@ -30,7 +30,27 @@ do_action( 'genesis_title' );
  *
  * @since 1.0.0
  */
+
 do_action( 'genesis_meta' );
+
+/* keywords */
+if ( is_front_page() ){ ?>
+	<meta name="keywords" content="short term credit, instant personal loan">
+<?php }
+
+global $post;
+$post_slug = $post->post_name;
+
+if ($post_slug == 'about') :?>
+	<meta name="keywords" content="financial services platform,financial solutions">
+<?php endif;
+if ($post_slug == 'careers') :?>
+	<meta name="keywords" content="bueno finance,financial solutions">
+<?php endif;
+if ($post_slug == 'contact-us') :?>
+	<meta name="keywords" content="short term credit, instant credit">
+<?php endif;
+/* keywords end*/
 
 wp_head(); // We need this for plugins.
 ?>
