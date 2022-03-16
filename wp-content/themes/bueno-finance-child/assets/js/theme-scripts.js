@@ -294,6 +294,11 @@ $(document).ready(function(){
     var
         cur = $(slick.$slides[nextSlide]);
     console.log(slick.$prev, slick.$next);
+
+    $('.scan-pay-section .icon-text-section .wp-block-media-text').removeClass('active')
+    $('.slide-index-'+currentSlide).addClass('active')
+    
+    
     slick.$prev.removeClass('slick-sprev');
     slick.$next.removeClass('slick-snext');
     // slick.$prev.prev().removeClass('slick-sprev2');
@@ -324,11 +329,31 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     centerPadding: '0',
+    autoplay: true,
+    autoplaySpeed: 2000,
     arrows: false,
     swipe: true,
-    customPaging: function(slider, i) {
-        return '';
-    },
+    // customPaging: function(slider, i) {
+    //     return '';
+    // },
     /*infinite: false,*/
     });
+
+    for(let i = 0; i < 6 ; i++){
+        $('.slide-index-'+i).mouseenter(function(){
+            console.log('i ran')
+            $('.scan-section1 .mobile-slider-js').slick('slickGoTo', i)
+        })
+    }
 })
+
+
+// var interval;
+
+// function startTimer() {
+//     clearInterval(interval);    
+//     interval = setInterval(function(){
+//         $('.scan-section1 .mobile-slider-js').slickNext()
+//         console.log('run')
+//     }, 5000);
+// }
