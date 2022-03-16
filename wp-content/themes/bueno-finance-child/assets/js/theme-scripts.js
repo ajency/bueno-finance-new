@@ -117,6 +117,7 @@ $(document).ready(function(){
         dots: true,
         speed: 1000,
         cssEase: 'ease-in-out',
+        fade: true,
         responsive: [
             {
                 breakpoint: 992,
@@ -330,7 +331,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     centerPadding: '0',
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     arrows: false,
     swipe: true,
     customPaging: function(slider, i) {

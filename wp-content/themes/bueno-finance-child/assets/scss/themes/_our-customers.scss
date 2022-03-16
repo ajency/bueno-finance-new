@@ -21,6 +21,7 @@
                     .section-heading{
                         margin-bottom: 30px;
                         margin-top: 0;
+                        z-index: 3;
                     }
                     .our-customer-text{
                         font-weight: 500;
@@ -64,6 +65,11 @@
     }
     .slick-slider{
         margin-bottom: 0px !important;
+        .slick-active{
+            .our-customer-name, .our-customer-text{
+                animation: comeIn 1s linear;
+            }
+        }
     }
     .slick-dots{
         display: flex;
@@ -181,4 +187,17 @@
             width: auto;
         }
     }
+}
+
+@keyframes comeIn {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
 }
