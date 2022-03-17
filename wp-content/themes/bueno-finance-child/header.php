@@ -47,7 +47,7 @@ if ($post_slug == 'about') :?>
 if ($post_slug == 'careers') :?>
 	<meta name="keywords" content="bueno finance,financial solutions">
 <?php endif;
-if ($post_slug == 'contact-us') :?>
+if ($post_slug == 'partner-with-us') :?>
 	<meta name="keywords" content="short term credit, instant credit">
 <?php endif;
 /* keywords end*/
