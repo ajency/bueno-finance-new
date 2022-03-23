@@ -151,12 +151,15 @@
         .stats-container{
             &__stat{
                 background-image: none;
-                background-color: transparent;
-                padding:0px;
+                background-color: $background;
+                padding:20px 6px 4px 5px;
                 position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
 
                 &:not(:first-child){
-                    margin-left: 12px !important;
+                    margin-left: 10px !important;
                 }
                 p{
                     font-weight: 500;
@@ -164,15 +167,21 @@
                     line-height: 24px;
                     text-align: left;
                     color: black;
+                    text-align: center;
+                    font-family: 'Montserrat Alternates';
                 }
                 .stat-number{
+                    font-family: 'Montserrat';
                     font-size: 18px;
                     line-height: 22px;
-                    margin-bottom: 6px;
+                    margin-bottom: 8px;
                     color:$light-green;
+                    strong{
+                        font-weight: 600;
+                    }
                 }
 
-                &:before{
+                /* &:before{
                     content:"";
                     background: $background;
                     height: 50px;
@@ -182,7 +191,7 @@
                     left: 0px;
                     top:-14px;
                     z-index: -1;
-                }
+                } */
             }
         }
         .right-side{
