@@ -291,10 +291,8 @@ $(document).ready(function(){
     slick.$prev = prev;
     slick.$next = next;
     }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    console.log('beforeChange');
     var
         cur = $(slick.$slides[nextSlide]);
-    console.log(slick.$prev, slick.$next);
 
     $('.scan-pay-section .icon-text-section .wp-block-media-text').removeClass('active')
     $('.slide-index-'+nextSlide).addClass('active')
@@ -342,7 +340,6 @@ $(document).ready(function(){
 
     for(let i = 0; i < 6 ; i++){
         $('.slide-index-'+i).mouseenter(function(){
-            console.log('i ran')
             $('.scan-section1 .mobile-slider-js').slick('slickGoTo', i)
         })
     }

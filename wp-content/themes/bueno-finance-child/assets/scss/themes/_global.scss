@@ -22,7 +22,18 @@ body{
         padding:0px 20px;
     }
 }
+/* Lazy Load */
 
+img[data-src] {
+    opacity: 0;
+    transition: opacity .20s ease-in-out;
+    will-change: opacity;
+  }
+  
+  /* appear animation */
+  img[data-src][src] {
+    opacity: 1;
+  }
 .section-heading{
     font-family: 'Montserrat Alternates', sans-serif;
     font-style: normal;
