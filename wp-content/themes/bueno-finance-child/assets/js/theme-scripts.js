@@ -22,6 +22,28 @@ $(window).on("load resize",function(e){
     $(".why-bueno-section .gb-container-image-wrap .gb-container-image").css("width", $columnWidth + $containerMargin);
 });
 
+/* fetch data from the URL */
+$(document).ready(function(){
+var partners = $('.partners .stat-number strong');
+var users = $('.users .stat-number strong');
+var downloads = $('.downloads .stat-number strong');
+var loans = $('.loans .stat-number strong');
+
+fetch('https://api.buenofinance.in/lms/site/details')
+	.then(function (response) {
+		return response.json();
+	})
+	.then(function (data) {
+		partners.text(data.response.partners);
+        users.text(data.response.users);
+        downloads.text(data.response.appDownloads);
+        loans.text(data.response.loanGiven);
+	})
+	.catch(function (err) {
+		console.log(err);
+	});
+});
+
 /* our partners logo slider */
 $ourPartnersLogoSlider = $(".our-partners-section .logo-slider .gb-container-content");
 $ourPartnersTestimonialSlider = $(".our-partners-section .testimonial-slider .gb-container-content");
